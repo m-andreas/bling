@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'Lobster';
+  src: local('Lobster'), url(../fonts/Lobster_1_4.otf) format('OpenType');
+}
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: local('Gotham-thin'), url(../fonts/Gotham-Thin.otf) format('OpenType');
+}
+@font-face {
+  font-family: 'Gotham-Light';
+  src: local('Gotham-Light'), url(../fonts/Gotham-Light.otf) format('OpenType');
+}
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44b0d4+0,2a8ad8+100,207bca+100,5774b9+100 */
+  background: #44b0d4; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #44b0d4 0%, #2a8ad8 100%, #207bca 100%, #5774b9 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#44b0d4), color-stop(100%,#2a8ad8), color-stop(100%,#207bca), color-stop(100%,#5774b9)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  #44b0d4 0%,#2a8ad8 100%,#207bca 100%,#5774b9 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  #44b0d4 0%,#2a8ad8 100%,#207bca 100%,#5774b9 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  #44b0d4 0%,#2a8ad8 100%,#207bca 100%,#5774b9 100%); /* IE10+ */
+  background: linear-gradient(135deg,  #44b0d4 0%,#2a8ad8 100%,#207bca 100%,#5774b9 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b0d4', endColorstr='#5774b9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+.animsition{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+nav.top-bar {
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align:center;
+  font-family: "Gotham-Thin";
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-bar.expanded .title-area{
+  background: none;
+}
+
+.top-bar.expanded{
+  background: rgba(255, 255, 255, 0.4);
+}
+
+section.top-bar-section {
+  color:white;
+  display: inline-block;
+}
+
+section.top-bar-section > ul > li{
+  background:none;
+  padding-top: 0.6em;
+  padding-left: 0.45em;
+  padding-right: 0.45em;
+}
+
+section.top-bar-section > ul > li > a{
+  font-size: 1em;
+  padding: 0 !important;
+  padding-left: 0.45em !important;
+  padding-right: 0.45em !important;
+  line-height: 1.5em !important;
+  background:none !important;
+  font-family: "Gotham-Thin";
+}
+
+h1{
+  padding-top: 0.8em;
+  color: white;
+  font-family: "Gotham-Light";
+}
+h2{
+  color: white;
+  font-family: "Gotham-Light";
+  font-size: 1.4em;
+}
+.center{
+  text-align: center;
+}
+
+.bling{
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+}
+
+.bling.animated{
+  text-shadow:  -0.02em 0 #ccd5d7, 0 0.02em #ccd5d7, 0.02em 0 #ccd5d7, 0 -0.02em #ccd5d7;
+}
+
+.logo{
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 3em;
+  color:white;
+  text-shadow:  -0.03em 0 #5775b9, 0 0.03em #5775b9, 0.03em 0 #5775b9, 0 -0.03em #5775b9, 0.05em 0.05em 0.2em #1d1f1f;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.logo.move{
+  -webkit-transform: translate(0em,5em) scale(2);
+  -moz-transform: translate(3em,0);
+  -o-transform: translate(3em,0);
+  -ms-transform: translate(3em,0);
+  transform: translate(0em,5em  ) scale(1.2);
+}
+
+.top-bar{
+  opacity: 0.0;
+  visibility: "visible";
+}
+
+.main{
+  margin-top: 1em;
+  opacity: 0.0;
+  visibility: "visible";
+}
+
+#watch-text{
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}
+/* Accessoirs Page */
+.accessoir{
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.5em;
+  margin-right:0.8em;
+  margin-bottom:1em;
+}
+
+.image_left{
+  float: left;
+  margin-right: 1em;
+}
+/* About Us Page */
+
+.logofont{
+  font-family: "Lobster";
+  font-size: 2.7em;
+  color:white;
+  text-shadow:  -0.03em 0 #5775b9, 0 0.03em #5775b9, 0.03em 0 #5775b9, 0 -0.03em #5775b9, 0.05em 0.05em 0.2em #1d1f1f;
+}
+
+.logofont a{
+  font-family: "Lobster";
+  font-size: 1em;
+  color:white;
+  text-shadow: -0.03em 0 #5775b9, 0 0.03em #5775b9, 0.03em 0 #5775b9, 0 -0.03em #5775b9, 0.05em 0.05em 0.2em #1d1f1f;
+}
+.logofont > a > span > img{
+  height:3em;
+}
+
+#about_text{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+}
+/* News Page */
+#news-wrapper{
+  width:80%;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+  color:white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.news-entry{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #79aaca;
+}
+.news-header{
+  width: 80%;
+  font-size: 2em;
+  color: #43afd4;
+}
+
+/* Stores Page */
+
+#map-wrapper{
+  height:100%;
+}
+
+#map-hand{
+  position: absolute;
+  max-height: 500px;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+
+/* jssor slider bullet navigator skin 05 css */
+/*
+.jssorb05 div           (normal)
+.jssorb05 div:hover     (normal mouseover)
+.jssorb05 .av           (active)
+.jssorb05 .av:hover     (active mouseover)
+.jssorb05 .dn           (mousedown)
+*/
+.jssorb05 {
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('../img/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 22 css */
+/*
+.jssora22l                  (normal)
+.jssora22r                  (normal)
+.jssora22l:hover            (normal mouseover)
+.jssora22r:hover            (normal mouseover)
+.jssora22l.jssora22ldn      (mousedown)
+.jssora22r.jssora22rdn      (mousedown)
+*/
