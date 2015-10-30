@@ -27,7 +27,7 @@
     <?php include ("header.php"); ?>
     <div class="row main">
       <div class="center logofont"><span id="about_bling">Bling</span><span id="about_my"> my </span><span id="about_phone">Phone</span></div>
-      <div id="about_text">
+      <div id="about-text">
         <h2>Berühren Sie die Schrift oberhalb!</h2>
       </div>
     </div>
@@ -52,7 +52,7 @@
 
     function reset_about(){
       $(".temp_image").remove()
-      $("#about_text").html("<h2>Berühren Sie die Schrift oberhalb!</h2>")
+      $("#about-text").html("<h2>Berühren Sie die Schrift oberhalb!</h2>")
     }
 
     jQuery(document).ready(function ($) {
@@ -80,26 +80,26 @@
       });
 
       $('#about_bling').hover(  function() {
-          $(this).append('<img src="../img/bling.png" class="temp_image" style="position:absolute;height:3.3em">')
-          $(".temp_image").css('top', $(this).offset().top - 35 + "px")
-          $(".temp_image").css('left', $(this).offset().left - 45 + "px")
-          $("#about_text").html("<h1>Angebot</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
+          $(this).append('<img src="../img/bling.png" class="temp_image" style="position:absolute;height:1.7em">')
+          $(".temp_image").css('top', $(this).offset().top - 10 + "px")
+          $(".temp_image").css('left', $(this).offset().left - 35 + "px")
+          $("#about-text").html("<h1>Angebot</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
         }, function() {
           reset_about();
       });
       $('#about_my').hover(  function() {
-          $(this).append('<img src="../img/my.png" class="temp_image" style="position:absolute;height:3.3em">')
-          $(".temp_image").css('top', $(this).offset().top - 35 + "px")
+          $(this).append('<img src="../img/my.png" class="temp_image" style="position:absolute;height:1.5em">')
+          $(".temp_image").css('top', $(this).offset().top + 1 + "px")
           $(".temp_image").css('left', $(this).offset().left - 30 + "px")
-          $("#about_text").html("<h1>Unternehmens<wbr>geschichte</h1>asdasdas asd asd a sd asdasdasd   asdas da sdasdasd ")
+          $("#about-text").html("<h1>Unternehmens<wbr>geschichte</h1>asdasdas asd asd a sd asdasdasd   asdas da sdasdasd ")
         }, function() {
           reset_about();
       });
       $('#about_phone').hover(  function() {
-          $(this).append('<img src="../img/phone.png" class="temp_image" style="position:absolute;height:4.3em">')
-          $(".temp_image").css('top', $(this).offset().top - 70 + "px")
-          $(".temp_image").css('left', $(this).offset().left - 55 + "px")
-          $("#about_text").html("<h1>Team</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
+          $(this).append('<img src="../img/phone.png" class="temp_image" style="position:absolute;height:2em">')
+          $(".temp_image").css('top', $('#about_phone').offset().top - 11 + "px")
+          $(".temp_image").css('left', $(this).offset().left - 35 + "px")
+          $("#about-text").html("<h1>Team</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
         }, function() {
           reset_about();
       });

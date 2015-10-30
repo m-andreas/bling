@@ -12,11 +12,11 @@
       </ul>
       <section class="top-bar-section">
         <ul class="center animsition">
-          <li><a href="/bling/index.php" class="animsition-link">Home</a></li>
-          <li><a href="/bling/php/news.php" class="animsition-link">News</a></li>
-          <li><a href="/bling/php/stores.php" class="animsition-link">Stores</a></li>
-          <li><a href="/bling/php/accessoires.php" class="animsition-link">Accessoires</a></li>
-          <li><a href="/bling/php/about.php" class="animsition-link">Über uns</a></li>
+          <li><a class="link link--yaku animsition-link" href="/bling/index.php"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+          <li><a class="link link--yaku animsition-link" href="/bling/php/news.php"><span>N</span><span>e</span><span>w</span><span>s</span></a></li>
+          <li><a class="link link--yaku animsition-link" href="/bling/php/stores.php"><span>S</span><span>t</span><span>o</span><span>r</span><span>e</span><span>s</span></a></li>
+          <li><a class="link link--yaku animsition-link" href="/bling/php/accessoires.php"><span>A</span><span>c</span><span>c</span><span>e</span><span>s</span><span>s</span><span>o</span><span>i</span><span>r</span><span>e</span><span>s</span></a></li>
+          <li><a class="link link--yaku animsition-link" href="/bling/php/about.php"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
         </ul>
       </section>
     </nav>

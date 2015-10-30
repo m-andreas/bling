@@ -10,6 +10,14 @@
   font-family: 'Gotham-Light';
   src: local('Gotham-Light'), url(../fonts/Gotham-Light.otf) format('OpenType');
 }
+@font-face {
+  font-family: 'Gotham-Book';
+  src: local('Gotham-Book'), url(../fonts/Gotham-Book.otf) format('OpenType');
+}
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: local('Gotham-Medium '), url(../fonts/Gotham-Medium.otf) format('OpenType');
+}
 
 body {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44b0d4+0,2a8ad8+100,207bca+100,5774b9+100 */
@@ -23,7 +31,16 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44b0d4', endColorstr='#5774b9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-repeat: no-repeat;
   background-attachment:fixed;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+html{
+  height: 100%;
+}
+
+
+
 .animsition{
   position: absolute;
   bottom: 0;
@@ -47,6 +64,7 @@ nav.top-bar {
 
 .top-bar.expanded{
   background: rgba(255, 255, 255, 0.4);
+  z-index: 10;
 }
 
 section.top-bar-section {
@@ -62,13 +80,15 @@ section.top-bar-section > ul > li{
 }
 
 section.top-bar-section > ul > li > a{
-  font-size: 1em;
+  font-size: 1.35em;
   padding: 0 !important;
-  padding-left: 0.45em !important;
-  padding-right: 0.45em !important;
+  margin-top: -4px !important;
+  padding-left: 0em !important;
+  padding-right: 0.1em !important;
   line-height: 1.5em !important;
   background:none !important;
   font-family: "Gotham-Thin";
+  text-shadow:  -2px 0 #5775b9, 0 2px #5775b9, 2px 0#5775b9, 0 2px #5775b9;
 }
 
 h1{
@@ -84,6 +104,118 @@ h2{
 .center{
   text-align: center;
 }
+
+/* Link Effekt */
+
+.link {
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 8em;
+  line-height: 1;
+  color: #9e9ba4;
+  display: inline-block;
+  text-shadow:  -0.1px 0 #5775b9, 0 0.1px #5775b9, 0.1px 0#5775b9, 0 -0.1px #5775b9;
+
+}
+/* Yaku */
+.link--yaku {
+  color: #44b0d4;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 10em;
+  overflow: hidden;
+  padding: 0 0 10px;
+}
+
+.link--yaku::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-width: 2px 0;
+  border-color: #44b0d4;
+  border-style: solid;
+  left: 0;
+  -webkit-transform: translate3d(-101%,0,0);
+  -moz-transform: translate3d(-101%,0,0);
+  -ms-transform: translate3d(-101%,0,0);
+  transform: translate3d(-101%,0,0);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -webkit-transform 0.5s;
+  -ms-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.link--yaku:hover::before {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.link--yaku span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -moz-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -os-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+  -moz-transition: -webkit-transform 0.5s, color 0.5s;
+  -ms-transition: -webkit-transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+  color: #44b0d4;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  -moz-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  -ms-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:first-child, .link--yaku:hover span:nth-child(8) {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(2), .link--yaku:hover span:nth-child(5), .link--yaku:hover span:nth-child(9){
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(3), .link--yaku:hover span:nth-child(6), .link--yaku:hover span:nth-child(10) {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(4), .link--yaku:hover span:nth-child(7), .link--yaku:hover span:nth-child(11) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 42em) {
+
+  .link--yaku { font-size: 4em; }
+}
+
+/*index page */
+
+
 
 .bling{
   -webkit-animation-duration: 0.1s;
@@ -107,12 +239,21 @@ h2{
   transition: 1s ease-in-out;
 }
 
+.logo span:hover{
+  text-shadow:  -0.02em 0 #ccd5d7, 0 0.02em #ccd5d7, 0.02em 0 #ccd5d7, 0 -0.02em #ccd5d7;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .logo{
+    font-size: 5em;
+  }
+}
 .logo.move{
-  -webkit-transform: translate(0em,5em) scale(2);
-  -moz-transform: translate(3em,0);
-  -o-transform: translate(3em,0);
-  -ms-transform: translate(3em,0);
-  transform: translate(0em,5em  ) scale(1.2);
+  -webkit-transform: translate(0em,2em) scale(1.2);
+  -moz-transform: translate(0em,2em) scale(1.2);
+  -o-transform: translate(0em,2em) scale(1.2);
+  -ms-transform: translate(0em,2em) scale(1.2);
+  transform: translate(0em,2em  ) scale(1.2);
 }
 
 .top-bar{
@@ -122,7 +263,6 @@ h2{
 
 .main{
   margin-top: 1em;
-  opacity: 0.0;
   visibility: "visible";
 }
 
@@ -131,6 +271,109 @@ h2{
   bottom: 2em;
   left: 2em;
 }
+
+#jssor_1{
+  opacity: 0.0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+}
+
+.slides1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1000px;
+  height: 500px;
+}
+
+
+#caption1_1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1000px;
+  height: 100px;
+}
+
+#caption1_1 h1{
+  font-family: "Gotham-Book";
+}
+
+#caption1_1 span:hover::before{
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+#caption1_1 span:hover{
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  -moz-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  -ms-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  transform: perspective(1000px) rotate3d(0,1,0,360deg);
+  color: #ffd700;
+}
+
+#caption1_1 span{
+  display: inline-block;
+  position: relative;
+  -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -moz-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -ms-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  transform: perspective(1000px) rotate3d(0,1,0,0deg);
+  -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+  -moz-transition: -webkit-transform 0.5s, color 0.5s;
+  -ms-transition: -webkit-transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s;
+}
+
+#caption1_2{
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  width: 1000px;
+  height: 100px;
+}
+
+#caption1_2 h1{
+  font-family: "Gotham-Book";
+  text-shadow:  -0.01em 0 black, 0 0.01em 0.1em black, 0.01em 0 0.1em black, 0 -0.01em black;
+}
+
+#caption1_2 h2{
+  font-family: "Gotham-Book";
+  font-weight:  bold;
+  text-shadow:  -0.01em 0 black, 0 0.01em 0.1em black, 0.01em 0 0.1em black, 0 -0.01em black;
+}
+
+.jssorb05 {
+    position: absolute;
+    bottom:-484px;
+    right:6px;
+    left:0px;
+    margin:auto;
+    z-index: 99;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('../img/b05.png') no-repeat;
+    overflow: visible;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+
 /* Accessoirs Page */
 .accessoir{
   border-radius: 0.5em;
@@ -145,6 +388,26 @@ h2{
   margin-right: 1em;
 }
 /* About Us Page */
+
+#about-text{
+  text-align: left;
+}
+
+#about-text h1{
+  padding-top: 0.0em;
+  color: #43afd4;
+  font-family: "Gotham-Medium";
+}
+
+#about-text h1:before, #about-text h1:after {
+    content: attr(title);
+    padding: 5px;
+    color: rgba(255,255,255,.1);
+    position: absolute;
+}
+
+#about-text h1:before { top: 1px; left: 1px }
+#about-text h1:after  { top: 2px; left: 2px }
 
 .logofont{
   font-family: "Lobster";
@@ -163,10 +426,11 @@ h2{
   height:3em;
 }
 
-#about_text{
-  width: 80%;
+#about-text{
+  width: 70%;
+  padding: 1em;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 0.5em;
 }
@@ -195,7 +459,6 @@ h2{
 /* Stores Page */
 
 #map-wrapper{
-  height:100%;
 }
 
 #map-hand{
@@ -204,40 +467,30 @@ h2{
   left:0;
   right:0;
   bottom:0;
-  margin:auto;
+  margin: 0 auto;
 }
 
-/* jssor slider bullet navigator skin 05 css */
-/*
-.jssorb05 div           (normal)
-.jssorb05 div:hover     (normal mouseover)
-.jssorb05 .av           (active)
-.jssorb05 .av:hover     (active mouseover)
-.jssorb05 .dn           (mousedown)
-*/
-.jssorb05 {
-    position: absolute;
+#map{
+  width: 270px;
+  height: 470px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  right: 0;
 }
-.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-    position: absolute;
-    /* size of bullet elment */
-    width: 16px;
-    height: 16px;
-    background: url('../img/b05.png') no-repeat;
-    overflow: hidden;
-    cursor: pointer;
-}
-.jssorb05 div { background-position: -7px -7px; }
-.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-.jssorb05 .av { background-position: -67px -7px; }
-.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
 
-/* jssor slider arrow navigator skin 22 css */
-/*
-.jssora22l                  (normal)
-.jssora22r                  (normal)
-.jssora22l:hover            (normal mouseover)
-.jssora22r:hover            (normal mouseover)
-.jssora22l.jssora22ldn      (mousedown)
-.jssora22r.jssora22rdn      (mousedown)
-*/
+/* Medium Screen */
+@media only screen and (min-height: 870px){
+  #map-hand{
+    max-height: 850px;
+  }
+}
+
+/* Large Screen */
+@media only screen and (min-height: 1000px) {
+  #map-hand{
+    height: 1000px;
+  }
+}
+

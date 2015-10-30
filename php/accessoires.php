@@ -26,8 +26,8 @@
   <div class="animsition">
     <?php include ("header.php"); ?>
     <div class="row main">
-      <div class="small-11 medium-5 large-6 column accessoir">
-        <img src="../img/carbon_case.png" class="image_left" style="width:128px;"/>
+      <div class="small-11 medium-5 large-6 column accessoir" style="height:300px">
+        <img src="../img/carbon_case.png" class="image_left" style="height:280px;"/>
         <h2>Carbon Case</h2>
         Lorem Ipsum
         Lorem Ipsum
@@ -37,18 +37,16 @@
       </div>
       <div class="small-11 medium-5 large-3 column">
         <row>
-          <div class="small-12 column accessoir">
+          <div class="small-12 column accessoir" style="height:142.5px">
             <img src="../img/power_bank.png" class="image_left" style="width:100px;"/>
             <h2>Power Banks</h2>
-            Lorem Ipsum
-            Lorem Ipsum
             Lorem Ipsum
             Lorem Ipsum
             Lorem Ipsum
           </div>
         </row>
         <row>
-          <div class="small-12 column accessoir">
+          <div class="small-12 column accessoir" style="height:142.5px">
             <img src="../img/flip_cases.png" class="image_left" style="width:50px;"/>
             <h2>Div. Flip Cases</h2>
           </div>

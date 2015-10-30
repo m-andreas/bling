@@ -22,33 +22,34 @@
   <title>Bling my Phone - Für jeden Geschmack!</title>
   <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
 </head>
-<body onload="move_down()">
+<body onload="moveDown()" style="min-height:500px;">
   <div class="animsition">
     <?php include ("php/header.php"); ?>
     <div class="row main">
-      <div class="small-12 column">
-        <div id="jssor_1" style="position: relative; bottom: 0px; left: 0px; width: 1000px; height: 500px;">
-          <div data-u="slides" style=" position: absolute; overflow: hidden; left: 0px; top: 0px;width: 1000px; height: 500px;">
-              <div>
-                <img u="image" class="phone_image" src="img/phone_in_hand.png"  onclick="change_image(this)" />
-                <div u="caption" t="transition_name1" style="position: absolute; top: 30px; left: 0px; width: 1000px;height: 100px;">
-                  <h1 class="center">Für jeden Geschmack</h1>
-                </div>
+      <div id="jssor_1">
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="" data-autocenter="0">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <div data-u="slides" class="slides1">
+            <div class="slides_wrapper">
+              <img u="image" class="phone_image" src="img/case_hand1.png" onmousemove='changeImage(0,1)'/>
+              <img u="image" class="phone_image" src="img/case_hand2.png" onmousemove="changeImage(1,2)" style="display: none;" />
+              <img u="image" class="phone_image" src="img/case_hand3.png" onmousemove="changeImage(2,3)" style="display: none;"/>
+              <img u="image" class="phone_image" src="img/case_hand4.png" onmousemove="changeImage(3,4)" style="display: none;"/>
+              <img u="image" class="phone_image" src="img/case_hand5.png" onmousemove="changeImage(4,0)" style="display: none;"/>
+              <div u="caption" t="transition_name1" id="caption1_1">
+                <h1 class="center"><span>F</span><span>ü</span><span>r</span> <span>j</span><span>e</span><span>d</span><span>e</span><span>n</span> <span>G</span><span>e</span><span>s</span><span>c</span><span>h</span><span>m</span><span>a</span><span>c</span><span>k</span></h1>
               </div>
-              <div>
-                <img u="image" src="img/watch.png" />
-                <div u="caption" t="transition_name2" style="position: absolute; bottom: 100px; left: 30px; width: 1000px;height: 100px;">
-                  <h1>Apple Watch</h1>
-                  <h2>jetzt erhältlich!</h2>
-                </div>
+            </div>
+            <div>
+              <img u="image" src="img/watch.png" />
+              <div u="caption" t="transition_name2" id="caption1_2">
+                <h1>Apple Watch</h1>
+                <h2>jetzt erhältlich!</h2>
               </div>
-          </div>
-          <!-- Bullet Navigator -->
-          <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
-              <!-- bullet navigator item prototype -->
-              <div data-u="prototype" style="width:16px;height:16px;"></div>
-          </div>
-          <!-- Arrow Navigator -->
+            </div>
         </div>
       </div>
     </div>
@@ -65,14 +66,19 @@
       s= s.substring(s.lastIndexOf('/')+ 1);
       return extension? s.replace(/[?#].+$/, ''): s.split('.')[0];
   }
-
-  function change_image(el){
-    console.log($(el).attr('src').filename());
+  var until = new Date().getTime()
+  function changeImage(index2remove, index2show){
+    if( until + 500  < new Date().getTime() ){
+      until = new Date().getTime()
+      $($(".phone_image")[index2remove]).hide();
+      $($(".phone_image")[index2show]).copyCSS($($(".phone_image")[index2remove]))
+      $($(".phone_image")[index2show]).show();
+    }
   }
 
   var el_string = '#bling-b'
   var count = 1
-  function highlight_bling(){
+  function highlightBling(){
     if (el_string != '' ){
       highlight($(el_string));
       switch(el_string) {
@@ -111,30 +117,30 @@
           break;
         default:
           el_string = ''
-          move_up();
+          moveUp();
       }
     }
   }
 
-  function move_down(){
+  function moveDown(){
     $(".logo").addClass("move")
-    window.setTimeout(highlight_bling,1000);
+    window.setTimeout(highlightBling,1000);
   }
 
-  function move_up(){
+  function moveUp(){
     $(".logo").removeClass("move")
     show_content();
   }
 
   function show_content(){
     $(".top-bar").animate({opacity: 1.0}, 3000);
-    $(".main").animate({opacity: 1.0}, 3000);
+    $("#jssor_1").animate({opacity: 1.0}, 3000);
   }
 
   function highlight(el){
     el.addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
       $(this).removeClass('animated pulse')
-      highlight_bling();
+      highlightBling();
     });
   }
   </script>
@@ -143,7 +149,7 @@
 
         jQuery(document).ready(function ($) {
             $(".animsition").animsition({
-              inClass: 'fade-in-down-lg',
+              inClass: 'fade-in',
               outClass: 'fade-out-down-lg',
               inDuration: 1500,
               outDuration: 800,
@@ -166,7 +172,7 @@
             });
 
             var jssor_1_options = {
-              $FillMode: 1,
+              $FillMode: 5,
               $AutoPlay: true,
               $Idle: 5000,
               $SlideDuration: 1000,
@@ -182,13 +188,19 @@
             //responsive code begin
             //you can remove responsive code if you don't want the slider scales while window resizes
             function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
+                var bodyWidth = document.body.clientWidth;
+                var bodyHeight = document.body.clientHeight;
+                console.log("scale")
+                if (bodyWidth) {
+                  var sliderWidth = bodyWidth - 20 ;
+                  var sliderHeight = bodyHeight - 200 ;
+                  jssor_1_slider.$ScaleHeight(sliderHeight);
+                  console.log(jssor_1_slider.$GetScaleHeight())
+                  if ( jssor_1_slider.$GetScaleWidth() > bodyWidth ){
+                    jssor_1_slider.$ScaleWidth(sliderWidth);
+                  }
+                } else {
+                  window.setTimeout(ScaleSlider, 30);
                 }
             }
             ScaleSlider();
@@ -197,5 +209,48 @@
             $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
         });
+
+        $.fn.copyCSS = function (source) {
+            var dom = $(source).get(0);
+            var dest = {};
+            var style, prop;
+            if (window.getComputedStyle) {
+                var camelize = function (a, b) {
+                        return b.toUpperCase();
+                };
+                if (style = window.getComputedStyle(dom, null)) {
+                    var camel, val;
+                    if (style.length) {
+                        for (var i = 0, l = style.length; i < l; i++) {
+                            prop = style[i];
+                            camel = prop.replace(/\-([a-z])/, camelize);
+                            val = style.getPropertyValue(prop);
+                            dest[camel] = val;
+                        }
+                    } else {
+                        for (prop in style) {
+                            camel = prop.replace(/\-([a-z])/, camelize);
+                            val = style.getPropertyValue(prop) || style[prop];
+                            dest[camel] = val;
+                        }
+                    }
+                    return this.css(dest);
+                }
+            }
+            if (style = dom.currentStyle) {
+                for (prop in style) {
+                    dest[prop] = style[prop];
+                }
+                return this.css(dest);
+            }
+            if (style = dom.style) {
+                for (prop in style) {
+                    if (typeof style[prop] != 'function') {
+                        dest[prop] = style[prop];
+                    }
+                }
+            }
+            return this.css(dest);
+        };
     </script>
 </body>
