@@ -1,6 +1,6 @@
 <div class="row">
   <div class="small-12 column logo">
-    <span class="bling" id="bling-b">B</span><span class="bling" id="bling-l">l</span><span class="bling" id="bling-i">i</span><span class="bling" id="bling-n1">n</span><span class="bling" id="bling-g">g </span><span class="bling" id="bling-m">m</span><span class="bling" id="bling-y">y </span><span class="bling" id="bling-p">p</span><span class="bling" id="bling-h">h</span><span class="bling" id="bling-o">o</span><span class="bling" id="bling-n2">n</span><span class="bling" id="bling-e">e</span>
+    <span class="bling" id="bling-b">B</span><span class="bling" id="bling-l">l</span><span class="bling" id="bling-i">i</span><span class="bling" id="bling-n1">n</span><span class="bling" id="bling-g">g </span><span class="bling" id="bling-m">m</span><span class="bling" id="bling-y">y </span><span class="bling" id="bling-p">P</span><span class="bling" id="bling-h">h</span><span class="bling" id="bling-o">o</span><span class="bling" id="bling-n2">n</span><span class="bling" id="bling-e">e</span>
   </div>
 </div>
 <div class="row">

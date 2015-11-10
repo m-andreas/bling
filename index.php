@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset=utf-8>
-  <meta name=description content="Reparatur von Apple und Smartphones">
+  <meta name=description content="Mobile Accessoires mit Stil">
   <meta name=author content="handyrepair.at">
   <meta name=language content="de">
   <meta name=keywords content="Iphone, Apple, Handy, Reparatur, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon">
