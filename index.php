@@ -44,10 +44,44 @@
               </div>
             </div>
             <div>
-              <img u="image" src="img/watch.png" />
+              <img u="image" src="img/slider/support.png" class="slide-img"/>
+              <div u="caption" t="transition_name2" id="caption1_2">
+                <div id="support-heading">Apple Support</div>
+                <span>Probleme mit Ihrem iPhone, iPad oder Macbook?
+                  Kein Problem! – Besuchen Sie unseren Store in der
+                  Jasomirgottstraße und lassen Sie sich von uns helfen!</span>
+              </div>
+            </div>
+            <div>
+              <img u="image" src="img/slider/ipad.png" class="slide-img"/>
               <div u="caption" t="transition_name2" id="caption1_2">
                 <h1>Apple Watch</h1>
-                <h2>jetzt erhältlich!</h2>
+                <h2>iPad Air, iPad Mini, iPad Pro</h2>
+                <span class="available">Bei uns erhältlich!</span>
+              </div>
+            </div>
+            <div>
+              <img u="image" src="img/slider/watch.png" class="slide-img"/>
+              <div u="caption" t="transition_name2" id="caption1_2">
+                <h1>Apple Watch</h1>
+                <h2>Alle Modelle & Konfigurationen</h2>
+                <span class="available">Bei uns erhältlich!</span>
+              </div>
+            </div>
+            <div>
+              <img u="image" src="img/slider/apple-tv.png" class="slide-img"/>
+              <div u="caption" t="transition_name2" id="caption1_2">
+                <h1>Apple TV</h1>
+                <h2>4. Generation</h2>
+                <span class="available">Bei uns erhältlich!</span>
+              </div>
+            </div>
+            <div>
+              <img u="image" src="img/slider/6s.png" class="slide-img"/>
+              <div u="caption" t="transition_name2" id="caption1_2">
+                <h1>Iphone 6s</h1>
+                <h2>Alle Farben und alle Größen</h2>
+                <span class="available">Bei uns erhältlich!</span>
               </div>
             </div>
         </div>

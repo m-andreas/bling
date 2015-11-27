@@ -83,7 +83,10 @@
           $(this).append('<img src="../img/bling.png" class="temp_image" style="position:absolute;height:1.7em">')
           $(".temp_image").css('top', $(this).offset().top - 10 + "px")
           $(".temp_image").css('left', $(this).offset().left - 35 + "px")
-          $("#about-text").html("<h1>Angebot</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
+          $("#about-text").html("<h1>Angebot</h1>Neben den neusten Technik-Innovationen, wie dem Apple iPhone 6s, Samsung Galaxy S6, iPad Pro oder den neusten Macbooks, bieten wir Ihnen eine Vielzahl an verschiedenster Accessoires.
+            Egal ob iPhone, Samsung, Sony,… bei uns finden Sie zu allen gängigen Marken Ihr Zubehör. Sei es ein ausgefallenes Case als Schutz für Ihr Smartphone oder als Modeaccessoire. Neben einer außerordentlichen Auswahl an Smartphone-Case, können Sie bei uns auch neueste Trends aus der Audiowelt.
+            Apple Zubehör, wie Lightning-Kabel, original Earpods und verschiedenste Adapter sind in unseren drei Filialen auch zu finden. Nicht zuletzt  zeichnen wir uns für einen exzellenten Kundensupport durch unsere geschulten Mitarbeiter aus.
+            Besuchen Sie einen unserer Stores im ersten Wiener Gemeindebezirk und überzeugen Sie sich selbst. ")
         }, function() {
           reset_about();
       });
@@ -91,7 +94,8 @@
           $(this).append('<img src="../img/my.png" class="temp_image" style="position:absolute;height:1.5em">')
           $(".temp_image").css('top', $(this).offset().top + 1 + "px")
           $(".temp_image").css('left', $(this).offset().left - 30 + "px")
-          $("#about-text").html("<h1>Unternehmens<wbr>geschichte</h1>asdasdas asd asd a sd asdasdasd   asdas da sdasdasd ")
+          $("#about-text").html("<h1>Unternehmens<wbr>geschichte</h1>Unternehemensgeschichte:
+            Gegründet wurde das Unternehmen Bling my Phone von Arian Salehynia im Oktober 2013 in der Führichgasse. Nach nur ein paar Wochen eröffnete er einen weiteren Store der Bling my Phone am berühmten Wiener Stephansplatz. Das Unternehmen etablierte einen Service welcher als Handyrepair.at bekannt wurde. Im April 2014 eröffnete man eine dritte Filiale in der Kupferschmiedgasse. Die Bling my Phone Gmbh hat sich somit als der Smartphone-Experte in der Innen Stadt etabliert.  Anfang 2015 wurde der Service Handyrepair.at zu einer eigenständigen Firma welche mit der Bling my Phone auf jeder Ebene kooperiert. Seit Oktober 2015 wird die Bling my Phone Gmbh von Roland Ableitinger in der Geschäftsführung unterstützt.")
         }, function() {
           reset_about();
       });
@@ -99,7 +103,8 @@
           $(this).append('<img src="../img/phone.png" class="temp_image" style="position:absolute;height:2em">')
           $(".temp_image").css('top', $('#about_phone').offset().top - 11 + "px")
           $(".temp_image").css('left', $(this).offset().left - 35 + "px")
-          $("#about-text").html("<h1>Team</h1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,")
+          $("#about-text").html("<h1>Unternehmens<wbr>geschichte</h1>Unternehemensgeschichte:
+            Gegründet wurde das Unternehmen Bling my Phone von Arian Salehynia im Oktober 2013 in der Führichgasse. Nach nur ein paar Wochen eröffnete er einen weiteren Store der Bling my Phone am berühmten Wiener Stephansplatz. Das Unternehmen etablierte einen Service welcher als Handyrepair.at bekannt wurde. Im April 2014 eröffnete man eine dritte Filiale in der Kupferschmiedgasse. Die Bling my Phone Gmbh hat sich somit als der Smartphone-Experte in der Innen Stadt etabliert.  Anfang 2015 wurde der Service Handyrepair.at zu einer eigenständigen Firma welche mit der Bling my Phone auf jeder Ebene kooperiert. Seit Oktober 2015 wird die Bling my Phone Gmbh von Roland Ableitinger in der Geschäftsführung unterstützt.")
         }, function() {
           reset_about();
       });

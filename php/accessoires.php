@@ -26,7 +26,7 @@
   <div class="animsition">
     <?php include ("header.php"); ?>
     <div class="row main">
-      <div class="small-11 medium-5 large-6 column accessoir" style="height:300px" id="carbon">
+      <div class="small-11 medium-5 large-6 column accessoir animated" style="height:300px" id="carbon">
         <img src="../img/carbon_case.png" class="image_left" style="height:280px;" id="carbon-img"/>
         <h2>Carbon Case</h2>
         Lorem Ipsum
@@ -35,9 +35,9 @@
         Lorem Ipsum
         Lorem Ipsum
       </div>
-      <div class="small-11 medium-5 large-3 column">
+      <div class="small-11 medium-5 large-3 column accessoir no-bg">
         <row>
-          <div class="small-12 column accessoir" style="height:142.5px">
+          <div class="small-12 column accessoir" style="height:142px" id="power-bank">
             <img src="../img/power_bank.png" class="image_left" style="width:100px;" id="powerbank-img"/>
             <h2>Power Banks</h2>
             Lorem Ipsum
@@ -46,13 +46,13 @@
           </div>
         </row>
         <row>
-          <div class="small-12 column accessoir" style="height:142.5px">
+          <div class="small-12 column accessoir animated" style="height:142px" id="flip-case">
             <img src="../img/flip_cases.png" class="image_left" style="width:50px;" id="flip-case-img"/>
             <h2>Div. Flip Cases</h2>
           </div>
         </row>
       </div>
-      <div class="small-11 medium-5 large-2 column accessoir">
+      <div class="small-11 medium-5 large-2 column accessoir" id="tempered-glass" style="height:300px">
         <img src="../img/tempered_glass.png" class="image_left" style="width:128px;" id="tempered-glass-img"/>
         <h2>Tempered Glass</h2>
         Lorem Ipsum
@@ -62,19 +62,19 @@
         Lorem Ipsum
       </div>
       <div class="small-12 column">
-        <div class="small-11 medium-4 large-2 column accessoir">
+        <div class="small-11 medium-4 large-2 column accessoir animated" id="kfz-kabel" style="width:140px;">
           <img src="../img/kfz_kabel.png" class="image_left" style="width:60px;" id="kfz-kabel-img"/>
           <h2>KFZ - Ladekabel</h2>
         </div>
-        <div class="small-11 medium-4 large-2 column accessoir">
+        <div class="small-11 medium-4 large-2 column accessoir" id="iphone-cases">
           <img src="../img/iphone_cases.png" class="image_left" style="width:60px;" id="iphone-cases-img"/>
           <h2>IPhone Cases</h2>
         </div>
-        <div class="small-11 medium-4 large-2 column accessoir">
+        <div class="small-11 medium-4 large-2 column accessoir" id="sim-karten" style="width:110px;">
           <img src="../img/sim_karten.png" class="image_left" style="width:60px;" id="sim-karten-img"/>
           <h2>Sim Karten</h2>
         </div>
-        <div class="small-11 medium-4 large-2 column accessoir">
+        <div class="small-11 medium-4 large-2 column accessoir animated" id="apple-accesoires" style="width:180px;">
           <img src="../img/apple_accesoires.png" class="image_left" style="width:60px;" id="apple-accesoires-img"/>
           <h2>Apple Accesoires</h2>
           Lorem Ipsum
@@ -83,11 +83,11 @@
           Lorem Ipsum
           Lorem Ipsum
         </div>
-        <div class="small-11 medium-4 large-2 column accessoir">
+        <div class="small-11 medium-4 large-2 column accessoir" id="selfie-sticks">
           <img src="../img/selfie_sticks.png" class="image_left" style="width:128px;" id="selfie-sticks-img"/>
           <h2>Selfie Sticks</h2>
         </div>
-        <div class="small-11 medium-4 large-1 column accessoir">
+        <div class="small-11 medium-4 large-1 column accessoir animated" id="luxus-cases">
           <img src="../img/luxus_cases.png" class="image_left" style="width:128px;" id="luxus-cases-img"/>
           <h2>Luxus Cases</h2>
         </div>
@@ -99,7 +99,7 @@
           data-image="../img/outlook-reel.jpg"
           data-stitched="1652"
           data-orientable="true">
-          </div>
+      </div>
     </div>
   </div>
   <script src="../js/vendor/jquery.js"></script>
@@ -140,135 +140,26 @@
         overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
       });
-      $("#carbon-img").css("position", "absolute")
-      $("#carbon-img").css("left", "100%")
-      $("#tempered-glass-img").css("position", "absolute")
-      $("#tempered-glass-img").css("right", "200%")
-      $("#flip-case-img").css("position", "absolute")
-      $("#kfz-kabel-img").css("position", "absolute")
-      $("#kfz-kabel-img").css("left", "300%")
-      $("#kfz-kabel-img").css("bottom", "100%")
-      $("#iphone-cases-img").css("position", "absolute")
-      $("#iphone-cases-img").css("left", "200%")
-      $("#iphone-cases-img").css("bottom", "100%")
-      $("#selfie-sticks-img").css("position", "absolute")
-      $("#selfie-sticks-img").css("position", "absolute")
-      $("#sim-karten-img").css("position", "absolute")
-      $("#sim-karten-img").css("position", "absolute")
-      $("#apple-accesoires-img").css("position", "absolute")
-      $("#apple-accesoires-img").css("position", "absolute")
-      $("#powerbank-img").css("position", "absolute")
-      $("#powerbank-img").css("position", "absolute")
-
-
-      $("#carbon-img").circulate({
-          loop: true,
-          width: 350,
-          height: 300
-      });
-
-      $("#flip-case-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 700,
-          sizeAdjustment: 50
-      });
-
-      $("#tempered-glass-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 500,
-          sizeAdjustment: 50
-      });
-
-      $("#kfz-kabel-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 500,
-          sizeAdjustment: 50
-      });
-
-      $("#iphone-cases-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 300,
-          sizeAdjustment: 50
-      });
-
-      $("#selfie-sticks-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 600,
-          sizeAdjustment: 50
-      });
-
-      $("#sim-karten-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 600,
-          sizeAdjustment: 50
-      });
-
-      $("#apple-accesoires-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 400,
-          sizeAdjustment: 50
-      });
-
-
-      $("#powerbank-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 500,
-          sizeAdjustment: 50
-      });
-
-      $("#luxus-cases-img").circulate({
-          loop: true,
-          width: 150,
-          height: 100,
-          speed: 800,
-          sizeAdjustment: 50
-      });
 
       setTimeout(function(){
-        $("#powerbank-img").circulate("Stop");
-        $("#carbon-img").circulate("Stop");
-        $("#apple-accesoires-img").circulate("Stop");
-        $("#sim-karten-img").circulate("Stop");
-        $("#iphone-cases-img").circulate("Stop");
-        $("#kfz-kabel-img").circulate("Stop");
-        $("#tempered-glass-img").circulate("Stop");
-        $("#flip-case-img").circulate("Stop");
-        $("#selfie-sticks-img").circulate("Stop");
-        $("#luxus-cases-img").circulate("Stop");
-      }, 2000 );
-            //$("#carbon").circulate("Stop");
+        $("#carbon").addClass('fade-in-left' );
+        $("#tempered-glass").animate({opacity: 1},2000, "linear");
+        $("#sim-karten").animate({opacity: 1},2000, "linear");
+
+      },1000)
       setTimeout(function(){
-        $("#carbon-img").css("position", "relative")
-        $("#flip-case-img").css("position", "relative")
-        $("#tempered-glass-img").css("position", "relative")
-        $("#kfz-kabel-img").css("position", "relative")
-        $("#iphone-cases-img").css("position", "relative")
-        $("#selfie-sticks-img").css("position", "relative")
-        $("#sim-karten-img").css("position", "relative")
-        $("#apple-accesoires-img").css("position", "relative")
-        $("#powerbank-img").css("position", "relative")
-        $("#carbon-img").animate({"left": 0}, 1000);
-        $("#kfz-kabel-img").animate({"left": 0}, 1200);
-        $("#kfz-kabel-img").animate({"bottom": 0}, 1200);
-        $("#iphone-cases-img").animate({"left": 0}, 1200);
-        $("#iphone-cases-img").animate({"bottom": 0}, 1200);
-      }, 3000 );
+        $("#flip-case").addClass('rollIn' );
+        $("#kfz-kabel").addClass('fade-in-left' );
+      },500)
+      setTimeout(function(){
+        $("#power-bank").animate({opacity: 1},2000, "linear");
+        $("#selfie-sticks").animate({opacity: 1},1500, "linear");
+        $("#iphone-cases").animate({opacity: 1},1000, "linear");
+      },2000)
+      setTimeout(function(){
+        $("#luxus-cases").addClass('rollIn' );
+        $("#apple-accesoires").addClass('lightSpeedIn' );
+      },1500)
     });
 
 

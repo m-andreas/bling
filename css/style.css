@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: 'Gotham-Book';
-  src: local('Gotham-Book'), url(../fonts/Gotham-Book.otf) format('OpenType');
+  src: local('Gotham-Book'), url(../fonts/Gotham-Book.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Gotham-Medium';
@@ -38,7 +38,6 @@ body {
 html{
   height: 100%;
 }
-
 
 
 .animsition{
@@ -278,6 +277,12 @@ h2{
   margin: auto;
   width: 1000px;
   height: 500px;
+  visibility: hidden;
+}
+
+
+.right-headline{
+
 }
 
 .slides1{
@@ -327,23 +332,54 @@ h2{
   transition: transform 0.5s, color 0.5s;
 }
 
+.slide-img{
+  left : 0 !important;
+  width: 40% !important;
+  height: auto !important;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #caption1_2{
   position: absolute;
-  bottom: 100px;
-  left: 30px;
-  width: 1000px;
+  width: 50%;
+  overflow: visible;
+  right: 30px;
   height: 100px;
+  text-align: center
+}
+
+#support-heading{
+  margin-top: 30px;
+  color: white;
+  font-size: 4.5em;
+  white-space: nowrap;
+  font-family: "Gotham-Book", Montserrat;
 }
 
 #caption1_2 h1{
+  padding-top: 30px;
+  font-size: 5em;
+  white-space: nowrap;
   font-family: "Gotham-Book", Montserrat;
-  text-shadow:  -0.01em 0 black, 0 0.01em 0.1em black, 0.01em 0 0.1em black, 0 -0.01em black;
 }
 
 #caption1_2 h2{
   font-family: "Gotham-Book", Montserrat;
-  font-weight:  bold;
-  text-shadow:  -0.01em 0 black, 0 0.01em 0.1em black, 0.01em 0 0.1em black, 0 -0.01em black;
+  font-size: 2em;
+}
+
+#caption1_2 span{
+  font-family: "Gotham-Book", Montserrat;
+  color: white;
+}
+
+.available{
+  position: relative;
+  top: 150px;
+  font-size: 3em;
 }
 
 .jssorb05 {
@@ -374,10 +410,19 @@ h2{
   border-radius: 0.5em;
   background-color: rgba(255, 255, 255, 0.4);
   padding: 0.5em;
-  margin-right:0.8em;
+  margin-right:1.4em;
   margin-bottom:1em;
 }
 
+.no-bg{
+  background-color: transparent;
+}
+#carbon, #power-bank, #flip-case, #tempered-glass, #kfz-kabel, #iphone-cases, #sim-karten, #apple-accesoires, #selfie-sticks, #luxus-cases{
+  opacity: 0;
+}
+#luxus-cases{
+  float: left;
+}
 .row.main > .small-12.column{
   padding-left:0;
   padding-right:0;
@@ -471,8 +516,6 @@ h2{
 }
 
 #map{
-  width: 270px;
-  height: 470px;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -483,7 +526,7 @@ h2{
 /* Medium Screen */
 @media only screen and (min-height: 870px){
   #map-hand{
-    max-height: 850px;
+    max-height: 450px;
   }
 }
 
