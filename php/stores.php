@@ -146,9 +146,9 @@
               data-speed="0.5"
               class="reel pano"
               id="image3"
-              data-steps="30"
+              data-steps="60"
               data-step="13"
-              data-speed="0.05"
+              data-speed="10"
               data-image="../img/KGPanorama.png"
               data-stitched="460"
               data-orientable="true">
@@ -156,7 +156,9 @@
           <div class="pano-frame" id="furich-pano">
             <img src="../img/FGLeft.png" width="90%" height="150"
               class="reel pano"
-              data-speed="0.05"
+              data-steps="60"
+              data-step="13"
+              data-speed="0.5"
               data-delay="1"
               id="image2"
               data-image="../img/FGPanorama1.png"
@@ -218,6 +220,10 @@
     }
 
     jQuery(document).ready(function ($) {
+      if( $(document).width() < 672 ){
+        $("body").height(1200)
+      }
+
       $(".animsition").animsition({
         inClass: 'fade-in-down-lg',
         outClass: 'fade-out-down-lg',
@@ -242,27 +248,39 @@
       });
 
       $("#kupfer").mouseover( function(){
-        $("#kupfer-pano").show();
-        $("#furich-pano").hide();
-        $("#jasomirgott-pano").hide();
-        $("#map").hide();
-        $("#map-hand").hide();
+        if( $(document).width() > 672 ){
+          $("#kupfer-pano").show();
+          $("#furich-pano").hide();
+          $("#jasomirgott-pano").hide();
+          $("#map").hide();
+          $("#map-hand").hide();
+        } else {
+          $("#map-reset").mouseover();
+        }
       })
 
       $("#furich").mouseover( function(){
-        $("#furich-pano").show();
-        $("#jasomirgott-pano").hide();
-        $("#kupfer-pano").hide();
-        $("#map").hide();
-        $("#map-hand").hide();
+        if( $(document).width() > 672 ){
+          $("#furich-pano").show();
+          $("#jasomirgott-pano").hide();
+          $("#kupfer-pano").hide();
+          $("#map").hide();
+          $("#map-hand").hide();
+        } else {
+          $("#map-reset").mouseover();
+        }
       })
 
       $("#jasomirgott").mouseover( function(){
-        $("#jasomirgott-pano").show();
-        $("#furich-pano").hide();
-        $("#kupfer-pano").hide();
-        $("#map").hide();
-        $("#map-hand").hide();
+        if( $(document).width() > 672 ){
+          $("#jasomirgott-pano").show();
+          $("#furich-pano").hide();
+          $("#kupfer-pano").hide();
+          $("#map").hide();
+          $("#map-hand").hide();
+        } else {
+          $("#map-reset").mouseover();
+        }
       })
 
       $("#map-reset").mouseover( function(){
