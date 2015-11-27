@@ -483,8 +483,7 @@ h2{
 #news-wrapper{
   width:80%;
   margin: 0 auto;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
   border-radius: 0.5em;
   color:white;
   padding-left: 2em;
