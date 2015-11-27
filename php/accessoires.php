@@ -92,20 +92,11 @@
           <h2>Luxus Cases</h2>
         </div>
       </div>
-      <div class="row">
-        <img src="../img/outlook.jpg" width="100%" height="150"
-          class="reel"
-          id="image"
-          data-image="../img/outlook-reel.jpg"
-          data-stitched="1652"
-          data-orientable="true">
-      </div>
     </div>
   </div>
   <script src="../js/vendor/jquery.js"></script>
   <script src="../js/foundation.min.js"></script>
   <script src="../js/animsition.js"></script>
-  <script src='../js/jquery.reel-min.js' type='text/javascript'></script>
   <script type='text/javascript' src='../js/jquery.easing.min.js'></script>
   <script type='text/javascript' src='../js/jquery.circulate.js'></script>
 
@@ -161,20 +152,5 @@
         $("#apple-accesoires").addClass('lightSpeedIn' );
       },1500)
     });
-
-
-      $(function(){ // when DOM ready
-return;
-        $('#image').reel({
-          stitched:    1652,
-          orientable:  true,
-          annotations: {
-            moro_rock: { x: 795, y: 60, link: { 'class': 'external near', text: 'Moro Rock', href: 'http://commons.wikimedia.org/wiki/File:Panorama_360_view_from_Moro_Rock_-_Giant_Sequoia_National_Park_-_California_USA_(2002).jpg' } },
-            ash_peaks_ridge: { x: 1250, y: 40, node: { text: 'Ash Peaks Ridge' } },
-            milk_ranch_peak: { x: 970, y: 30, link: { 'class': 'external', text: 'Milk Ranch Peak', href: 'http://travelingluck.com/North%20America/United%20States/California/_5372983_Milk%20Ranch%20Peak.html' } }
-          }
-        });
-
-      });
   </script>
 </body>

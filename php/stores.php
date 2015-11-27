@@ -132,13 +132,76 @@
   <div class="animsition">
     <?php include ("header.php"); ?>
     <div class="row main">
-        <img id="map-hand" src="../img/hand-map.png">
+        <div class="small-12 medium-3 column address" id="kupfer">
+          <p class="adresse">Kupferschmied&shy;gasse 2<br>
+          1010 Wien</p>
+          <p>Öffnungszeiten<br>
+          Mo. - Fr.: 10:00 - 19:00<br>
+          Sa.: 10:00 - 18:00</p>
+        </div>
+        <div class="small-12 medium-6 column address-spacer">
+          &nbsp
+          <div class="pano-frame" id="kupfer-pano">
+            <img src="../img/KGLeft.png" width="90%" height="150"
+              data-speed="0.5"
+              class="reel pano"
+              id="image3"
+              data-steps="30"
+              data-step="13"
+              data-speed="0.05"
+              data-image="../img/KGPanorama.png"
+              data-stitched="460"
+              data-orientable="true">
+          </div>
+          <div class="pano-frame" id="furich-pano">
+            <img src="../img/FGLeft.png" width="90%" height="150"
+              class="reel pano"
+              data-speed="0.05"
+              data-delay="1"
+              id="image2"
+              data-image="../img/FGPanorama1.png"
+              data-stitched= "602"
+              data-orientable="true">
+          </div>
+          <div class="pano-frame" id="jasomirgott-pano">
+            <img src="../img/outlook.jpg" width="90%" height="150"
+              class="reel pano"
+              id="image3"
+              data-image="../img/outlook-reel.jpg"
+              data-stitched="1652"
+              data-orientable="true">
+          </div>
+        </div>
+        <div class="small-12 medium-3 column address" id="jasomirgott">
+          <p class="adresse">Jasomirgott&shy;strasse 1-3<br>
+          1010 Wien</p>
+          <p>Öffnungszeiten<br>
+          Mo. - Fr.: 10:00 - 19:00<br>Sa.: 10:00 - 18:00</p>
+        </div>
+      </div>
+      <div class="row main no-top-mobile">
+        <div class="small-12 medium-3 column address no-top-mobile"  id="furich">
+            <p class="adresse">Führichgasse 4<br>
+            1010 Wien</p>
+            <p>Öffnungszeiten<br>
+            Mo. - Fr.: 10:00 - 19:00<br>
+            Sa.: 10:00 - 18:00</p>
+        </div>
+        <div class="small-12 medium-6 column no-top-mobile">
+        &nbsp
+        </div>
+        <div class="small-12 medium-3 column address no-top-mobile"  id="map-reset">
+          <p class="adresse">Karte<br>
+        </div>
         <div id="map"></div>
+        <img id="map-hand" src="../img/hand-map.png">
     </div>
   </div>
   <script src="../js/vendor/jquery.js"></script>
   <script src="../js/foundation.min.js"></script>
   <script src="../js/animsition.js"></script>
+  <script src='../js/jquery.reel-min.js' type='text/javascript'></script>
+
   <script>
     $(document).foundation();
 
@@ -177,6 +240,51 @@
         overlayParentElement : 'body',
         transition: function(url){ window.location.href = url; }
       });
+
+      $("#kupfer").mouseover( function(){
+        $("#kupfer-pano").show();
+        $("#furich-pano").hide();
+        $("#jasomirgott-pano").hide();
+        $("#map").hide();
+        $("#map-hand").hide();
+      })
+
+      $("#furich").mouseover( function(){
+        $("#furich-pano").show();
+        $("#jasomirgott-pano").hide();
+        $("#kupfer-pano").hide();
+        $("#map").hide();
+        $("#map-hand").hide();
+      })
+
+      $("#jasomirgott").mouseover( function(){
+        $("#jasomirgott-pano").show();
+        $("#furich-pano").hide();
+        $("#kupfer-pano").hide();
+        $("#map").hide();
+        $("#map-hand").hide();
+      })
+
+      $("#map-reset").mouseover( function(){
+        $("#jasomirgott-pano").hide();
+        $("#furich-pano").hide();
+        $("#kupfer-pano").hide();
+        $("#map").show();
+        $("#map-hand").show();
+      })
+
+      $('#kupfer-pano').reel({
+        stitched:    1652,
+        orientable:  true
+      });
+      $('#furich-pano').reel({
+        stitched:    1652,
+        orientable:  true
+      });
+      $('#jasomirgott-pano').reel({
+        stitched:    1652,
+        orientable:  true
+      });
     });
 
     var script = document.createElement('script');
@@ -191,18 +299,18 @@
       if ( window.innerHeight >= 870 && window.innerHeight < 1000){
         $("#map").css("width", "260px")
         $("#map").css("height", "470px")
-        $("#map").css("top",$("#map-hand").offset().top - 102 + "px" )
-        $("#map").css("left", "-37px" )
+        $("#map").css("top",$("#map-hand").offset().top - 92 + "px" )
+        $("#map").css("left", "-73px" )
       } else if ( window.innerHeight >= 1000){
         $("#map").css("width", "310px")
         $("#map").css("height", "550px")
-        $("#map").css("top",$("#map-hand").offset().top - 87 + "px" )
-        $("#map").css("left", "-45px" )
+        $("#map").css("top",$("#map-hand").offset().top - 115 + "px" )
+        $("#map").css("left", "-85px" )
       } else {
         $("#map").css("width", "182px")
         $("#map").css("height", "325px")
-        $("#map").css("top",$("#map-hand").offset().top - 126 + "px" )
-        $("#map").css("left", "-26px" )
+        $("#map").css("top",$("#map-hand").offset().top - 66 + "px" )
+        $("#map").css("left", "-52px" )
       }
 
     }
