@@ -79,7 +79,7 @@
             <div>
               <img u="image" src="img/slider/6s.png" class="slide-img"/>
               <div u="caption" t="transition_name2" id="caption1_2">
-                <h1>Iphone 6s</h1>
+                <h1>iPhone 6s</h1>
                 <h2>Alle Farben und alle Größen</h2>
                 <span class="available">Bei uns erhältlich!</span>
               </div>
@@ -88,7 +88,7 @@
       </div>
     </div>
   </div>
-  <script src="js/vendor/jquery.js"></script>
+  <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/animsition.js"></script>
   <script>

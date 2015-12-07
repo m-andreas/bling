@@ -4,11 +4,11 @@
 }
 @font-face {
   font-family: 'Gotham-Thin';
-  src: local('Gotham-thin'), url(../fonts/Gotham-Thin.otf) format('OpenType');
+  src: local('Gotham-thin'), url(../fonts/GOTHAM-THIN.TTF) format('truetype');
 }
 @font-face {
   font-family: 'Gotham-Light';
-  src: local('Gotham-Light'), url(../fonts/Gotham-Light.otf) format('OpenType');
+  src: local('Gotham-Light'), url(../fonts/GOTHAM-LIGHT.TTF) format('truetype');
 }
 @font-face {
   font-family: 'Gotham-Book';
@@ -16,9 +16,10 @@
 }
 @font-face {
   font-family: 'Gotham-Medium';
-  src: local('Gotham-Medium '), url(../fonts/Gotham-Medium.otf) format('OpenType');
+  src: local('Gotham-Medium '), url(../fonts/GOTHAM-MEDIUM.TTF) format('truetype');
 }
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 body {
     background: url(../img/bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -50,7 +51,7 @@ nav.top-bar {
   border-radius: 0.5em;
   background-color: rgba(255, 255, 255, 0.4);
   text-align:center;
-  font-family: "Gotham-Thin";
+  font-family: "Gotham-Thin", 'Open Sans';
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -85,17 +86,17 @@ section.top-bar-section > ul > li > a{
   padding-right: 0.1em !important;
   line-height: 1.5em !important;
   background:none !important;
-  font-family: "Gotham-Thin", Montserrat;
+  font-family: "Gotham-Light", 'Open Sans';
 }
 
 h1{
   padding-top: 0.8em;
   color: white;
-  font-family: "Gotham-Light", Montserrat;
+  font-family: "Gotham-Light", 'Open Sans';
 }
 h2{
   color: white;
-  font-family: "Gotham-Light",Montserrat;
+  font-family: "Gotham-Light", 'Open Sans';
   font-size: 1.4em;
 }
 .center{
@@ -259,6 +260,7 @@ h2{
 .main{
   margin-top: 1em;
   visibility: "visible";
+  overflow: visible;
 }
 
 #watch-text{
@@ -302,7 +304,7 @@ h2{
 }
 
 #caption1_1 h1{
-  font-family: "Gotham-Book",Montserrat;
+  font-family: "Gotham-Book", "Montserrat";
 }
 
 #caption1_1 span:hover::before{
@@ -355,23 +357,23 @@ h2{
   color: white;
   font-size: 4.5em;
   white-space: nowrap;
-  font-family: "Gotham-Book", Montserrat;
+  font-family: "Gotham-Book", "Montserrat";
 }
 
 #caption1_2 h1{
   padding-top: 30px;
   font-size: 5em;
   white-space: nowrap;
-  font-family: "Gotham-Book", Montserrat;
+  font-family: "Gotham-Book", "Montserrat";
 }
 
 #caption1_2 h2{
-  font-family: "Gotham-Book", Montserrat;
+  font-family: "Gotham-Book", "Montserrat";
   font-size: 2em;
 }
 
 #caption1_2 span{
-  font-family: "Gotham-Book", Montserrat;
+  font-family: "Gotham-Book", "Montserrat";
   color: white;
 }
 
@@ -441,7 +443,7 @@ h2{
 #about-text h1{
   padding-top: 0.0em;
   color: #43afd4;
-  font-family: "Gotham-Medium", Montserrat;
+  font-family: "Gotham-Medium", "Montserrat";
 }
 
 #about-text h1:before, #about-text h1:after {
@@ -524,11 +526,11 @@ h2{
   z-index: 3000;
 }
 
-#image1-reel, #image2-reel, #image3-reel{
-  width: 90% !important;
-  left: 10%;
-
+#map > p{
+  font-size: 0.8em;
 }
+
+
 
 .address{
     background: rgba(255, 255, 255, 0.4);
@@ -536,12 +538,28 @@ h2{
     border-radius: 0.5em;
     padding-left: 5px !important;
     color:white;
-    font-family: "Gotham-Thin", Montserrat;
+    font-family: "Gotham-Thin", 'Open Sans';
+}
+
+.gaddress-header{
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: "Gotham-Thin", 'Open Sans';
+}
+
+.gaddress{
+  font-family: "Gotham-Thin", 'Open Sans';
+  font-size: 0.8em;
+}
+
+.gaddress-opening{
+  font-family: "Gotham-Thin", 'Open Sans';
+  font-size: 0.8em;
 }
 
 .adresse{
-  font-family: "Gotham-Thin", Montserrat;
   font-weight: bold;
+  font-family: "Gotham-Thin", 'Open Sans';
 }
 
 .pano{
@@ -554,14 +572,49 @@ h2{
 }
 
 .pano-frame{
-  width: 80%;
+  width: 100%;
   height: 150px;
-  position: absolute;
   display: none;
+}
+
+#image3, #image1, #image2{
+
+}
+
+#image3, #image1, #image2{
+   width: 200px;
+   height: 350px;
+}
+
+#image3-reel, #image1-reel, #image2-reel{
+  width: 183px;
+  height: 325px;
+  position: absolute;
+  bottom: 121px;
+  left:-53px;
 }
 
 /* Medium Screen */
 @media only screen and (min-height: 870px){
+
+.pano-frame{
+     bottom: 100px;
+}
+
+#image3, #image1, #image2 {
+   width: 260px;
+   height: 465px;
+   background-size: 865px 260px;
+}
+
+#image3-reel, #image1-reel, #image2-reel {
+  right: 30px;
+  width: 262px;
+  height: 465px;
+  position: absolute;
+  bottom: 175px;
+  left: -45px;
+}
 
   #map-hand{
     max-height: 850px;
@@ -572,6 +625,23 @@ h2{
 @media only screen and (min-height: 1000px) {
   #map-hand{
     height: 1000px;
+  }
+  #image3, #image1, #image2 {
+     width: 310px ;
+     height: 549px;
+     background-size: 1867px 549;
+  }
+
+  #image3-reel, #image1-reel, #image2-reel {
+    right: 30px;
+    width: 310px;
+    height: 551px;
+    position: absolute;
+    bottom: 209px;
+    left: -57px;
+  }
+  .pano{
+    max-height: none;
   }
 }
 

@@ -53,10 +53,10 @@
               title:'Führichgasse 4'
         });
 
-        var contentString2 = '<p>Bling My Phone</p><br>' +
-                '<p class="adresse">Führichgasse 4<br>' +
+        var contentString2 = '<p class="gaddress-header">Bling My Phone</p><br>' +
+                '<p class="gaddress">Führichgasse 4<br>' +
                 '1010 Wien</p><br>' +
-                '<p>Öffnungszeiten<br>' +
+                '<p class="gaddress-opening">Öffnungszeiten<br>' +
                 'Mo. - Fr.: 10:00 - 19:00<br>' +
                 'Sa.: 10:00 - 18:00</p>'
 
@@ -75,10 +75,10 @@
               title:'Jasomirgottstrasse 1-3'
         });
 
-        var contentString3 = '<p>Bling My Phone</p><br>' +
-            '<p class="adresse">Jasomirgott&shy;strasse 1-3<br>' +
+        var contentString3 = '<p class="gaddress-header">Bling My Phone</p><br>' +
+            '<p class="gaddress">Jasomirgott&shy;strasse 1-3<br>' +
             '1010 Wien</p><br>' +
-            '<p>Öffnungszeiten<br>' +
+            '<p class="gaddress-opening">Öffnungszeiten<br>' +
             'Mo. - Fr.: 10:00 - 19:00<br>Sa.: 10:00 - 18:00</p>'
 
         var infowindow3 = new google.maps.InfoWindow({
@@ -96,10 +96,10 @@
               title:'Kupferschmiedgasse 2'
         });
 
-        var contentString4 = '<p>Bling My Phone</p><br>' +
-        '<p class="adresse">Kupferschmied&shy;gasse 2<br>' +
+        var contentString4 = '<p class="gaddress-header">Bling My Phone</p><br>' +
+        '<p class="gaddress">Kupferschmied&shy;gasse 2<br>' +
         '1010 Wien</p><br>' +
-        '<p>Öffnungszeiten<br>' +
+        '<p class="gaddress-opening">Öffnungszeiten<br>' +
         'Mo. - Fr.: 10:00 - 19:00<br>' +
         'Sa.: 10:00 - 18:00</p>'
 
@@ -141,38 +141,6 @@
         </div>
         <div class="small-12 medium-6 column address-spacer">
           &nbsp
-          <div class="pano-frame" id="kupfer-pano">
-            <img src="../img/KGLeft.png" width="90%" height="150"
-              data-speed="0.5"
-              class="reel pano"
-              id="image3"
-              data-steps="60"
-              data-step="13"
-              data-speed="10"
-              data-image="../img/KGPanorama.png"
-              data-stitched="460"
-              data-orientable="true">
-          </div>
-          <div class="pano-frame" id="furich-pano">
-            <img src="../img/FGLeft.png" width="90%" height="150"
-              class="reel pano"
-              data-steps="60"
-              data-step="13"
-              data-speed="0.5"
-              data-delay="1"
-              id="image2"
-              data-image="../img/FGPanorama1.png"
-              data-stitched= "602"
-              data-orientable="true">
-          </div>
-          <div class="pano-frame" id="jasomirgott-pano">
-            <img src="../img/outlook.jpg" width="90%" height="150"
-              class="reel pano"
-              id="image3"
-              data-image="../img/outlook-reel.jpg"
-              data-stitched="1652"
-              data-orientable="true">
-          </div>
         </div>
         <div class="small-12 medium-3 column address" id="jasomirgott">
           <p class="adresse">Jasomirgott&shy;strasse 1-3<br>
@@ -197,9 +165,46 @@
         </div>
         <div id="map"></div>
         <img id="map-hand" src="../img/hand-map.png">
+
     </div>
+      <div class="pano-frame" id="kupfer-pano">
+            <img src="../img/KGLeft.png"
+              class="reel pano"
+              id="image1"
+              data-frames="620"
+              data-speed="0.1"
+              data-delay="1"
+              data-loops="false"
+              data-image="../img/KGPanorama.png"
+              data-stitched="1652"
+              data-orientable="true">
+          </div>
+          <div class="pano-frame" id="furich-pano">
+            <img src="../img/FGLeft.png"
+              class="reel pano"
+              data-frames="620"
+              data-speed="0.1"
+              data-loops="false"
+              data-delay="1"
+              id="image2"
+              data-image="../img/FGPanorama1.png"
+              data-stitched= "1652"
+              data-orientable="true">
+          </div>
+          <div class="pano-frame" id="jasomirgott-pano">
+            <img src="../img/FGLeft.png"
+              class="reel pano"
+              data-frames="620"
+              data-speed="0.1"
+              data-loops="false"
+              data-delay="1"
+              id="image2"
+              data-image="../img/FGPanorama1.png"
+              data-stitched= "1652"
+              data-orientable="true">
+          </div>
   </div>
-  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/jquery-1.11.3.min.js"></script>
   <script src="../js/foundation.min.js"></script>
   <script src="../js/animsition.js"></script>
   <script src='../js/jquery.reel-min.js' type='text/javascript'></script>
@@ -253,7 +258,7 @@
           $("#furich-pano").hide();
           $("#jasomirgott-pano").hide();
           $("#map").hide();
-          $("#map-hand").hide();
+          $("#map-hand").show();
         } else {
           $("#map-reset").mouseover();
         }
@@ -265,7 +270,7 @@
           $("#jasomirgott-pano").hide();
           $("#kupfer-pano").hide();
           $("#map").hide();
-          $("#map-hand").hide();
+          $("#map-hand").show();
         } else {
           $("#map-reset").mouseover();
         }
@@ -277,7 +282,7 @@
           $("#furich-pano").hide();
           $("#kupfer-pano").hide();
           $("#map").hide();
-          $("#map-hand").hide();
+          $("#map-hand").show();
         } else {
           $("#map-reset").mouseover();
         }
@@ -289,20 +294,52 @@
         $("#kupfer-pano").hide();
         $("#map").show();
         $("#map-hand").show();
+        set_map();
       })
-
-      $('#kupfer-pano').reel({
-        stitched:    1652,
-        orientable:  true
-      });
-      $('#furich-pano').reel({
-        stitched:    1652,
-        orientable:  true
-      });
       $('#jasomirgott-pano').reel({
         stitched:    1652,
         orientable:  true
       });
+
+      window.addEventListener('resize', resizeReel);
+      function resizeReel()
+          { console.log("resize reel")
+            var c = $("#image3-reel").reel('frame');
+            $("#image3-reel").trigger('stop');
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+              //console.log ( "inner res "+w+" x "+h );
+
+            var elem = document.getElementById("image3");
+            var newWidth = 7/8*h*.9;
+
+            if ( newWidth > w ) // too wide
+            {
+              newWidth = w*.9;
+                //console.log ("too wide");
+            }
+            elem.style.width = newWidth+"px";
+
+            var elem = document.getElementById("image2");
+            var newWidth = 7/8*h*.9;
+
+            if ( newWidth > w ) // too wide
+            {
+              newWidth = w*.9;
+                //console.log ("too wide");
+            }
+            elem.style.width = newWidth+"px";
+              //console.log ( elem.style.width );
+            var elem = document.getElementById("image1");
+            var newWidth = 7/8*h*.9;
+
+            if ( newWidth > w ) // too wide
+            {
+              newWidth = w*.9;
+                //console.log ("too wide");
+            }
+            elem.style.width = newWidth+"px";
+          }
     });
 
     var script = document.createElement('script');
@@ -331,6 +368,20 @@
         $("#map").css("left", "-52px" )
       }
 
+      console.log("resize")
+      $('#kupfer-pano').reel({
+        width: 1800,
+        height: 600,
+        stitched:    152,
+        orientable:  true
+      });
+
+      $('#furich-pano').reel({
+        width: 1800,
+        height: 600,
+        stitched:    152,
+        orientable:  true
+      });
     }
 
   </script>
