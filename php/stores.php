@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/animsition.css">
   <script src="../js/vendor/modernizr.js"></script>
-  <script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
 
   <!--Google Maps Plugin Start-->
   <script type="text/javascript">
@@ -137,7 +136,7 @@
           1010 Wien</p>
           <p>Öffnungszeiten<br>
           Mo. - Fr.: 10:00 - 19:00<br>
-          Sa.: 10:00 - 18:00</p>
+          Sa.: 10:00 - 18:00<br><br>Tel.: +43 1 890 1330-88</p>
         </div>
         <div class="small-12 medium-6 column address-spacer">
           &nbsp
@@ -146,7 +145,7 @@
           <p class="adresse">Jasomirgott&shy;strasse 1-3<br>
           1010 Wien</p>
           <p>Öffnungszeiten<br>
-          Mo. - Fr.: 10:00 - 19:00<br>Sa.: 10:00 - 18:00</p>
+          Mo. - Fr.: 10:00 - 19:00<br><br>Sa.: 10:00 - 18:00<br>Tel.: +43 1 890 1330-83</p>
         </div>
       </div>
       <div class="row main no-top-mobile">
@@ -155,14 +154,12 @@
             1010 Wien</p>
             <p>Öffnungszeiten<br>
             Mo. - Fr.: 10:00 - 19:00<br>
-            Sa.: 10:00 - 18:00</p>
+            Sa.: 10:00 - 18:00<br><br>Tel.: +43 1 890 1330-80</p>
         </div>
         <div class="small-12 medium-6 column no-top-mobile">
         &nbsp
         </div>
-        <div class="small-12 medium-3 column address no-top-mobile"  id="map-reset">
-          <p class="adresse">Karte<br>
-        </div>
+
         <div id="map"></div>
         <img id="map-hand" src="../img/hand-map.png">
 
@@ -208,7 +205,6 @@
   <script src="../js/foundation.min.js"></script>
   <script src="../js/animsition.js"></script>
   <script src='../js/jquery.reel-min.js' type='text/javascript'></script>
-
   <script>
     $(document).foundation();
 
@@ -224,9 +220,21 @@
       });
     }
 
+    function resetMap(){
+      $("#jasomirgott-pano").hide();
+      $("#furich-pano").hide();
+      $("#kupfer-pano").hide();
+      $("#map").show();
+      $("#map-hand").show();
+      set_map();
+    }
+
     jQuery(document).ready(function ($) {
-      if( $(document).width() < 672 ){
-        $("body").height(1200)
+      if( $(document).width() < 641 ){
+        $("body").css("min-width",360) 
+        $("body").height(1425)
+      }else if( $(document).width() < 672 ) {
+        $("body").height(1375)
       }
 
       $(".animsition").animsition({
@@ -252,7 +260,7 @@
         transition: function(url){ window.location.href = url; }
       });
 
-      $("#kupfer").mouseover( function(){
+      $("#kupfer").hover( function(){
         if( $(document).width() > 672 ){
           $("#kupfer-pano").show();
           $("#furich-pano").hide();
@@ -261,10 +269,12 @@
           $("#map-hand").show();
         } else {
           $("#map-reset").mouseover();
+        }}, function(){
+          resetMap()
         }
-      })
+      )
 
-      $("#furich").mouseover( function(){
+      $("#furich").hover( function(){
         if( $(document).width() > 672 ){
           $("#furich-pano").show();
           $("#jasomirgott-pano").hide();
@@ -273,28 +283,27 @@
           $("#map-hand").show();
         } else {
           $("#map-reset").mouseover();
+        }}, function(){
+          resetMap()
         }
-      })
+      )
 
-      $("#jasomirgott").mouseover( function(){
-        if( $(document).width() > 672 ){
-          $("#jasomirgott-pano").show();
-          $("#furich-pano").hide();
-          $("#kupfer-pano").hide();
-          $("#map").hide();
-          $("#map-hand").show();
-        } else {
-          $("#map-reset").mouseover();
-        }
-      })
+      $("#jasomirgott").hover( //function(){
+        // if( $(document).width() > 672 ){
+        //   $("#jasomirgott-pano").show();
+        //   $("#furich-pano").hide();
+        //   $("#kupfer-pano").hide();
+        //   $("#map").hide();
+        //   $("#map-hand").show();
+        // } else {
+        //   $("#map-reset").mouseover();
+        // }}, function(){
+        //   resetMap()
+        // }
+      )
 
       $("#map-reset").mouseover( function(){
-        $("#jasomirgott-pano").hide();
-        $("#furich-pano").hide();
-        $("#kupfer-pano").hide();
-        $("#map").show();
-        $("#map-hand").show();
-        set_map();
+        resetMap();
       })
       $('#jasomirgott-pano').reel({
         stitched:    1652,
@@ -368,7 +377,6 @@
         $("#map").css("left", "-52px" )
       }
 
-      console.log("resize")
       $('#kupfer-pano').reel({
         width: 1800,
         height: 600,

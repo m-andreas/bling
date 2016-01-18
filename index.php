@@ -46,7 +46,7 @@
             <div>
               <img u="image" src="img/slider/support.png" class="slide-img"/>
               <div u="caption" t="transition_name2" id="caption1_2">
-                <div id="support-heading">Apple Support</div>
+                <div id="support-heading"><h1>Apple Support</h1></div>
                 <span>Probleme mit Ihrem iPhone, iPad oder Macbook?
                   Kein Problem! – Besuchen Sie unseren Store in der
                   Jasomirgottstraße und lassen Sie sich von uns helfen!</span>
@@ -55,7 +55,7 @@
             <div>
               <img u="image" src="img/slider/ipad.png" class="slide-img"/>
               <div u="caption" t="transition_name2" id="caption1_2">
-                <h1>Apple Watch</h1>
+                <h1>iPad</h1>
                 <h2>iPad Air, iPad Mini, iPad Pro</h2>
                 <span class="available">Bei uns erhältlich!</span>
               </div>

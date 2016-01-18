@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteBase /
+
+DirectoryIndex index.php
+RewriteRule ^home index.php
+RewriteRule ^accessoires$ php/accessoires.php [NE,L]
+RewriteRule ^about$ php/about.php [NE,L]
+RewriteRule ^stores$ php/stores.php [NE,L]
+RewriteRule ^news$ php/news.php [NC,L] 
+RewriteRule ^social like/index.html [NE,L]

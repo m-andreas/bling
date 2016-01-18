@@ -26,70 +26,80 @@
   <div class="animsition">
     <?php include ("header.php"); ?>
     <div class="row main">
-      <div class="small-11 medium-5 large-6 column accessoir animated" style="height:300px" id="carbon">
-        <img src="../img/carbon_case.png" class="image_left" style="height:280px;" id="carbon-img"/>
-        <h2>Carbon Case</h2>
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
+      <div class="small-12 medium-6 large-6 column no-bg">
+        <div class="small-12 column">
+          <div class="accessoir animated" id="carbon">
+            <img src="../img/carbon_case.png" class="image_left" style="height:280px;" id="carbon-img"/>
+            <h2>Carbon Case</h2>
+              Carbon bietet höchste Festigkeit bei geringem Gewicht und hat es dadurch ermöglicht die dünnsten und leichtesten Handyhüllen mit höchster Stabilität zu produzieren.
+              Ein Carbon Case garantiert präzise Verarbeitung, außergewöhnliches Design, Funktionalität sowie hervorragenden Schutz für Rückwand und Kanten des Smartphones. Gleichzeitig sind Medienknöpfe, Steckverbindungen und das Kameraobjektiv optimal nutzbar. Die dreidimensionale Oberflächenstruktur sorgt für guten Halt und bringt die besondere Optik der Fasern zur Geltung, die Innenseite des Covers ist glatt.
+          </div>
+        </div>
+        <div class="small-12 large-6 column no-bg">
+          <div class="small-12 large-6 column">
+            <div class="accessoir animated" id="kfz-kabel">
+              <img src="../img/kfz_kabel.png" class="image_left" style="width:60px;" id="kfz-kabel-img"/>
+              <h2>KFZ - Ladekabel</h2>
+            </div>
+            <div class="accessoir animated" id="selfie-sticks">
+              <img src="../img/selfie_sticks.png" class="image_left" style="width:128px;" id="selfie-sticks-img"/>
+              <h2>Selfie Sticks</h2>
+            </div>
+          </div>
+          <div class="small-12 large-6 column">
+            <div class="accessoir animated" id="iphone-cases">
+              <img src="../img/iphone_cases.png" class="image_left" style="width:60px;" id="iphone-cases-img"/>
+              <h2>IPhone Cases</h2>
+            </div>
+          </div>
+          <div class="small-12 large-6 column">
+            <div class="accessoir animated" id="sim-karten">
+              <img src="../img/sim_karten.png" class="image_left" style="width:60px;" id="sim-karten-img"/>
+              <h2>Sim Karten</h2>
+            </div>
+          </div>
+          <div class="small-12 large-6 column">
+            <div class="accessoir animated" id="luxus-cases">
+              <img src="../img/luxus_cases.png" class="image_left" style="width:128px;" id="luxus-cases-img"/>
+              <h2>Luxus Cases</h2>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 large-6 column">
+          <div class="accessoir animated" id="apple-accesoires">
+            <img src="../img/apple_accesoires.png" class="image_left" style="width:60px;" id="apple-accesoires-img"/>
+            <h2>Apple Accesoires</h2>
+              Für alle, die ihre Apple Produkte optimal nutzen oder ältere Zusatzteile ersetzen wollen, bieten wir umfangreiche, originale Apple Accessoires wie diverse Schutzhüllen, Lightning-Kabel, original Earpods, verschiedene Adapter und vieles mehr.
+          </div>
+        </div>
       </div>
-      <div class="small-11 medium-5 large-3 column accessoir no-bg">
+      <div class="small-12 medium-6 large-3 column  no-bg">
         <row>
-          <div class="small-12 column accessoir" style="height:142px" id="power-bank">
-            <img src="../img/power_bank.png" class="image_left" style="width:100px;" id="powerbank-img"/>
-            <h2>Power Banks</h2>
-            Lorem Ipsum
-            Lorem Ipsum
-            Lorem Ipsum
+          <div class="small-12 column">
+            <div class=" accessoir" id="power-bank">
+              <img src="../img/power_bank.png" class="image_left" style="width:100px;" id="powerbank-img"/>
+              <h2>Power Banks</h2>
+                Mit der PowerBank müssen Sie nie wieder Angst haben, dass der Akku Ihres Gerätes nicht lange genug hält. Die PowerBank ist ein externer Akku und lädt nicht nur Ihr Smartphone unterwegs auf sondern bietet eine lange Lebensdauer für alle Geräte mit micro/mini USB Anschluss.
+            </div>
           </div>
         </row>
         <row>
-          <div class="small-12 column accessoir animated" style="height:142px" id="flip-case">
-            <img src="../img/flip_cases.png" class="image_left" style="width:50px;" id="flip-case-img"/>
-            <h2>Div. Flip Cases</h2>
+          <div class="small-12 column">
+            <div class="accessoir animated" id="flip-case">
+              <img src="../img/flip_cases.png" class="image_left" style="width:50px;" id="flip-case-img"/>
+              <h2>Div. Flip Cases</h2>
+                Flip Cases bieten optimalen Rund-Um-Schutz für ihr Smartphone ohne auf den Tragekomfort oder die Bedienbarkeit zu verzichten.
+                Dieses Schutztaschen verhindern sowohl am Display als auch auf der Rückseite grobe Beschädigungen und Kratzer.
+            </div>
           </div>
         </row>
       </div>
-      <div class="small-11 medium-5 large-2 column accessoir" id="tempered-glass" style="height:300px">
-        <img src="../img/tempered_glass.png" class="image_left" style="width:128px;" id="tempered-glass-img"/>
-        <h2>Tempered Glass</h2>
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
-        Lorem Ipsum
-      </div>
-      <div class="small-12 column">
-        <div class="small-11 medium-4 large-2 column accessoir animated" id="kfz-kabel" style="width:140px;">
-          <img src="../img/kfz_kabel.png" class="image_left" style="width:60px;" id="kfz-kabel-img"/>
-          <h2>KFZ - Ladekabel</h2>
-        </div>
-        <div class="small-11 medium-4 large-2 column accessoir" id="iphone-cases">
-          <img src="../img/iphone_cases.png" class="image_left" style="width:60px;" id="iphone-cases-img"/>
-          <h2>IPhone Cases</h2>
-        </div>
-        <div class="small-11 medium-4 large-2 column accessoir" id="sim-karten" style="width:110px;">
-          <img src="../img/sim_karten.png" class="image_left" style="width:60px;" id="sim-karten-img"/>
-          <h2>Sim Karten</h2>
-        </div>
-        <div class="small-11 medium-4 large-2 column accessoir animated" id="apple-accesoires" style="width:180px;">
-          <img src="../img/apple_accesoires.png" class="image_left" style="width:60px;" id="apple-accesoires-img"/>
-          <h2>Apple Accesoires</h2>
-          Lorem Ipsum
-          Lorem Ipsum
-          Lorem Ipsum
-          Lorem Ipsum
-          Lorem Ipsum
-        </div>
-        <div class="small-11 medium-4 large-2 column accessoir" id="selfie-sticks">
-          <img src="../img/selfie_sticks.png" class="image_left" style="width:128px;" id="selfie-sticks-img"/>
-          <h2>Selfie Sticks</h2>
-        </div>
-        <div class="small-11 medium-4 large-1 column accessoir animated" id="luxus-cases">
-          <img src="../img/luxus_cases.png" class="image_left" style="width:128px;" id="luxus-cases-img"/>
-          <h2>Luxus Cases</h2>
+      <div class="small-12 medium-6 large-3 column">
+        <div class=" accessoir" id="tempered-glass">
+          <img src="../img/tempered_glass.png" class="image_left" style="width:128px;" id="tempered-glass-img"/>
+          <h2>Tempered Glass</h2>
+            Tempernd Glass ist aus speziell verarbeitetem Glas hergestellt, um das Display Ihres Smartphones vor Kratzern und Stößen zu schützen, indem es zum Beispiel den Aufprall abfedert.
+            Die Folie ist dünn und behindert werden die Bedienbarkeit des Smartphones, noch verändert sich die Bildqualität. Die Glasoberfläche ist kratzfest, öl- und staubabweisend und lässt sich rückstandslos entfernen.
         </div>
       </div>
     </div>

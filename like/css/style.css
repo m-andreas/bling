@@ -1,0 +1,248 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#wrapper {
+  position: relative;
+  width: 600px;
+  min-height: 400px;
+  margin: 100px auto;
+}
+
+.header{
+  text-align: center;
+  width:100%;
+}
+.left-panel{
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.fb-like {
+    overflow: hidden;
+}
+
+.fb-login {
+    transform: scale(4);
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    -moz-transform: scale(4);
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.fb-like-wrapper{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5em;
+    transform: scale(4);
+    -ms-transform: scale(4);
+    -webkit-transform: scale(4);
+    -o-transform: scale(4);
+    -moz-transform: scale(4);
+}
+
+.right-panel{
+  text-align: center;
+  width: 50%;
+  float: right;
+}
+
+.right-panel img{
+  height:2em;
+  margin-top:0.2em;
+}
+
+.g-like{
+  width: 23%;
+  margin: 0 auto;
+  margin-top: 5em;
+  scale(4);
+  -ms-transform: scale(4);
+  -webkit-transform: scale(4);
+  -o-transform: scale(4);
+  -moz-transform: scale(4);
+}
+
+.g-log-out{
+  scale(3.3);
+  -webkit-transform: scale(3.3);
+  -o-transform: scale(3.3);
+  -moz-transform: scale(3.3);
+  -ms-transform: scale(3.3);
+  margin-top: 88px;
+}
+
+@media (max-width: 600px){
+  .fb-login {
+    transform: scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    -o-transform: scale(3);
+    -moz-transform: scale(3);
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  .fb-like-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5em;
+      transform: scale(3);
+      -ms-transform: scale(3);
+      -webkit-transform: scale(3);
+      -o-transform: scale(3);
+      -moz-transform: scale(3);
+  }
+
+  .right-panel{
+    text-align: center;
+    width: 50%;
+    float: right;
+  }
+
+  .right-panel img{
+    height:2em;
+    margin-top:0.2em;
+  }
+
+  .g-like{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6em;
+    scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    -o-transform: scale(3);
+    -moz-transform: scale(3);
+  }
+
+  .g-log-out{
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 400px){
+  .fb-login {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -moz-transform: scale(2);
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  .fb-like-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5em;
+      transform: scale(2);
+      -ms-transform: scale(2);
+      -webkit-transform: scale(2);
+      -o-transform: scale(2);
+      -moz-transform: scale(2);
+  }
+
+  .right-panel{
+    text-align: center;
+    width: 50%;
+    float: right;
+  }
+
+  .right-panel img{
+    height:2em;
+    margin-top:0.2em;
+  }
+
+  .g-like{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6em;
+    scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -moz-transform: scale(2);
+  }
+
+  .g-log-out{
+    scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 200px){
+  .fb-login {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+  .fb-like-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5em;
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      -moz-transform: scale(1);
+  }
+
+  .right-panel{
+    text-align: center;
+    width: 50%;
+    float: right;
+  }
+
+  .right-panel img{
+    height:2em;
+    margin-top:0.2em;
+  }
+
+  .g-like{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6em;
+    scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .g-log-out{
+    scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    margin-top: 20px;
+  }
+}

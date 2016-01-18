@@ -55,6 +55,9 @@ nav.top-bar {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2480AC;
 }
 
 .top-bar.expanded .title-area{
@@ -167,6 +170,7 @@ h2{
 
 .link--yaku:hover span {
   color: #44b0d4;
+  text-shadow: -1px 0 rgba(0, 73, 126, 0.3), 0 1px rgba(0,72,126,0.3), 1px 0 rgba(0,71,125,0.3), 0 -1px rgba(0,73,125,0.3);
   -webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
   -moz-transform: perspective(1000px) rotate3d(0,1,0,360deg);
   -ms-transform: perspective(1000px) rotate3d(0,1,0,360deg);
@@ -352,7 +356,7 @@ h2{
   text-align: center
 }
 
-#support-heading{
+#support-heading h1{
   margin-top: 30px;
   color: white;
   font-size: 4.5em;
@@ -362,7 +366,7 @@ h2{
 
 #caption1_2 h1{
   padding-top: 30px;
-  font-size: 5em;
+  font-size: 4.3em;
   white-space: nowrap;
   font-family: "Gotham-Book", "Montserrat";
 }
@@ -410,25 +414,32 @@ h2{
 .accessoir{
   border-radius: 0.5em;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 0.5em;
-  margin-right:1.4em;
   margin-bottom:1em;
+  padding:0.9375rem;
+  width: 100%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2480AC;
+}
+
+#kfz-kabel{
+  overflow-wrap: break-word;
 }
 
 .no-bg{
   background-color: transparent;
   padding: 0;
+  margin: 0;
 }
+
 #carbon, #power-bank, #flip-case, #tempered-glass, #kfz-kabel, #iphone-cases, #sim-karten, #apple-accesoires, #selfie-sticks, #luxus-cases{
   opacity: 0;
 }
 #luxus-cases{
   float: left;
 }
-.row.main > .small-12.column{
-  padding-left:0;
-  padding-right:0;
-}
+
 
 .image_left{
   float: left;
@@ -447,6 +458,7 @@ h2{
   padding-top: 0.0em;
   color: #43afd4;
   font-family: "Gotham-Medium", "Montserrat";
+  text-shadow: -1px 0 rgba(0, 73, 126, 0.3), 0 1px rgba(0,72,126,0.3), 1px 0 rgba(0,71,125,0.3), 0 -1px rgba(0,73,125,0.3);
 }
 
 #about-text h1:before, #about-text h1:after {
@@ -483,6 +495,9 @@ h2{
   text-align: left;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 0.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2480AC;
 }
 /* News Page */
 #news-wrapper{
@@ -533,8 +548,6 @@ h2{
   font-size: 0.8em;
 }
 
-
-
 .address{
     background: rgba(255, 255, 255, 0.4);
     margin-top: 1em;
@@ -542,6 +555,15 @@ h2{
     padding-left: 5px !important;
     color:white;
     font-family: "Gotham-Thin", 'Open Sans';
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00497D;
+}
+
+.address:hover{
+  color: #f4f4f4;
+  border-color: #116194;
+  background: rgba(236, 237, 238, 0.4);
 }
 
 .gaddress-header{
@@ -595,6 +617,13 @@ h2{
   position: absolute;
   bottom: 121px;
   left:-53px;
+}
+
+#about-text h1{
+}
+
+#offer, #history, #team{
+  display: none;
 }
 
 /* Medium Screen */
@@ -663,8 +692,7 @@ h2{
   }
 
   .no-top-mobile{
-    padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 8px;
   }
 
   .address-spacer{

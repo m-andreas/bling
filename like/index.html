@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=description content="Handyaccesoirs und mehr">
+    <meta name=author content="blingmyphone.at">
+    <meta name=language content="de">
+    <meta name=keywords content="Iphone, Apple, Handy, Reparatur, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon">
+    <meta name=robots content=index,follow>
+    <meta name=audience content=alle>
+    <meta name=page-topic content="Handyreparaturservice">
+    <meta name=revisit-after CONTENT="7 days">
+    <meta name="google-signin-client_id" content="517025641560-tqtmhhm19qg8sapvrg7b0n884hf2f12j.apps.googleusercontent.com">
+  <title>Bling my Phone - Liek us!</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://handyrepair.at/favicon.ico" />
+  <link rel="stylesheet" href="http://blingmyphone.at/like/css/style.css" type="text/css" media="all" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<img alt="full screen background image" src="http://blingmyphone.at/like/img/bg.png" id="full-screen-background-image" />
+<div id="wrapper">
+  <div class="header">
+    <h1>Wir garantieren:</h1>
+    <h2>Keine Daten werden gespeichert!</h2>
+  </div>
+    <div class="left-panel">
+      <div class="fb-like-wrapper">
+        <div class="fb-like" data-href="https://www.facebook.com/blingmy" data-width="200" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+      </div>
+      <br>
+      <div class="fb-login">
+        <fb:login-button autologoutlink="true"></fb:login-button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="g-like">
+        <div class="g-follow" data-href="https://plus.google.com/103341994426717168637" data-rel="publisher" data-annotation="none" data-height="24"></div>
+      </div>
+      <br>
+      <div class="g-log-out">
+        <a href="https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://blingmyphone.at/like"><img src="http://blingmyphone.at/like/img/google_log_out.png"></a></div>
+      </div>
+    </div>
+
+  <script>
+
+    function runFbInitCriticalCode(){
+      console.log("fb ready")
+     document.getElementsByClassName("fb-login")[0].style.display = 'none';
+      FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+          console.log('Logged in.');
+          document.getElementsByClassName("fb-login")[0].style.display = 'block';
+        }
+        else {
+          document.getElementsByClassName("fb-like"[0]).style.display = 'none';
+          document.getElementsByClassName("fb-login"[0]).style.display = 'block';
+          document.getElementsByClassName("fb-login")[0].style.marginTop = "20px";
+        }
+      });
+      FB.getLoginStatus(function(response) {
+        console.log("in logind");
+        if (response.status === 'connected') {
+          console.log("conected");
+          document.getElementsByClassName("fb-login")[0].style.display = 'block';
+          // the user is logged in and has authenticated your
+          // app, and response.authResponse supplies
+          // the user's ID, a valid access token, a signed
+          // request, and the time the access token
+          // and signed request each expire
+          var uid = response.authResponse.userID;
+          var accessToken = response.authResponse.accessToken;
+        } else if (response.status === 'not_authorized') {
+          console.log("not authentificated");
+          document.getElementsByClassName("fb-login")[0].style.display = 'block';
+          document.getElementsByClassName("fb-like")[0].style.display = 'none';
+          document.getElementsByClassName("fb-login")[0].style.marginTop = "-25px";
+
+          // the user is logged in to Facebook,
+          // but has not authenticated your app
+        } else {
+          console.log("not conected");
+          document.getElementsByClassName("fb-login")[0].style.display = 'block';
+          document.getElementsByClassName("fb-like")[0].style.display = 'none';
+          document.getElementsByClassName("fb-login")[0].style.marginTop = "-25px";
+            lo = 'none';          // the user isn't logged in to Facebook.
+        }
+      });
+      FB.Event.subscribe('edge.create', function(response) {
+        location.reload();
+      });
+      FB.Event.subscribe('auth.logout',  function(response) {
+        document.getElementsByClassName("fb-login")[0].style.display = 'block';
+        document.getElementsByClassName("fb-like")[0].style.display = 'none';
+        location.reload();
+      });
+      FB.Event.subscribe('auth.login',  function(response) {
+        document.getElementsByClassName("fb-login")[0].style.display = 'none';
+        document.getElementsByClassName("fb-like")[0].style.display = 'block';
+        location.reload();
+      });
+    }
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '891567244254606',
+        xfbml      : true,
+        version    : 'v2.5'
+      });
+      console.log("after init")
+      runFbInitCriticalCode();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/de_de/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+
+
+  </script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'de'}
+    </script>
+
+</body>
