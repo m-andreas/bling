@@ -21,14 +21,13 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 body {
-    background: url(../img/bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.png', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg.png', sizingMethod='scale')";
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#44b0d4+0,2a8ad8+100,207bca+100,5774b9+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#43afd4+0,2989d8+31,207cca+50,2c2e83+100 */
+background: #43afd4; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #43afd4 0%, #2989d8 31%, #207cca 50%, #2c2e83 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #43afd4 0%,#2989d8 31%,#207cca 50%,#2c2e83 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #43afd4 0%,#2989d8 31%,#207cca 50%,#2c2e83 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#43afd4', endColorstr='#2c2e83',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
   height: 100%;
   padding-left: 15px;
   padding-right: 15px;

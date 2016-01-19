@@ -108,7 +108,6 @@
   <script src="../js/foundation.min.js"></script>
   <script src="../js/animsition.js"></script>
   <script type='text/javascript' src='../js/jquery.easing.min.js'></script>
-  <script type='text/javascript' src='../js/jquery.circulate.js'></script>
 
   <script>
     $(document).foundation();

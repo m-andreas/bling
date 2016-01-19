@@ -57,7 +57,8 @@
                 '1010 Wien</p><br>' +
                 '<p class="gaddress-opening">Öffnungszeiten<br>' +
                 'Mo. - Fr.: 10:00 - 19:00<br>' +
-                'Sa.: 10:00 - 18:00</p>'
+                'Sa.: 10:00 - 18:00<br>' +
+                '</p>'
 
         var infowindow2 = new google.maps.InfoWindow({
             content: contentString2
@@ -159,7 +160,12 @@
         <div class="small-12 medium-6 column no-top-mobile">
         &nbsp
         </div>
-
+        <div class="small-12 medium-3 column address" id="jasomirgott">
+          <p class="adresse">Impressum<br></p>
+          <p>Bling my Phone GmbH<br>
+          Jasmirgottstrasse 1-3<br>
+          A - 1010 Wien</p>
+        </div>
         <div id="map"></div>
         <img id="map-hand" src="../img/hand-map.png">
 
