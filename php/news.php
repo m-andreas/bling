@@ -4,22 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset=utf-8>
-  <meta name=description content="Reparatur von Apple und Smartphones">
-  <meta name=author content="handyrepair.at">
+  <meta name=description content="Die neueseten News von Bling my Phone. Hier erfahren Sie alles über neue Angebote und neue Produkte im Sortiment.">
+  <meta name=author content="Bling my Phone">
   <meta name=language content="de">
   <meta name=keywords content="Iphone, Apple, Handy, Reparatur, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon">
   <meta name=robots content=index,follow>
   <meta name=audience content=alle>
-  <meta name=page-topic content="Handyreparaturservice">
+  <meta name=page-topic content="Bling my Phone News Section">
   <meta name=revisit-after CONTENT="7 days">
   <link rel="stylesheet" href="../css/foundation.css" />
   <link rel="stylesheet" href="../css/animate.css">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/animsition.css">
   <script src="../js/vendor/modernizr.js"></script>
-  <script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
 
-  <title>Bling my Phone - Für jeden Geschmack!</title>
+  <title>Bling my Phone - News Section</title>
   <link rel="shortcut icon" type="image/x-icon" href="../css/images/favicon.ico" />
 </head>
 <body onload="show_content()">

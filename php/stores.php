@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset=utf-8>
-  <meta name=description content="Standorte, stores">
+  <meta name=description content="Unsere Filialen in 1010 Wien. Blick in die Geschäfte und Standortanzeige auf einer interaktiven Karte.">
   <meta name=author content="Bling My Phone">
   <meta name=language content="de">
   <meta name=keywords content="Iphone, Apple, Handy, Reparatur, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon">
   <meta name=robots content=index,follow>
   <meta name=audience content=alle>
-  <meta name=page-topic content="Handyreparaturservice">
+  <meta name=page-topic content="Unsere Shops in 1010 Wien inklusive Karte und virtueller Tour.">
   <meta name=revisit-after CONTENT="7 days">
   <link rel="stylesheet" href="../css/foundation.css" />
   <link rel="stylesheet" href="../css/animate.css">
@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="../css/animsition.css">
   <script src="../js/vendor/modernizr.js"></script>
 
+  <title>Bling my Phone - Unsere Shops in 1010 Wien inklusive Karte und virtueller Tour.</title>
+  <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
   <!--Google Maps Plugin Start-->
   <script type="text/javascript">
     function loadGoogle(){
@@ -174,25 +176,27 @@
             <img src="../img/KGLeft.png"
               class="reel pano"
               id="image1"
-              data-frames="620"
-              data-speed="0.1"
-              data-delay="1"
-              data-loops="false"
               data-image="../img/KGPanorama.png"
-              data-stitched="1652"
-              data-orientable="true">
+              data-stitched="1821"
+              data-frames="620"
+              data-frame="23"
+              data-speed="-0.1"
+              data-clickfree="true"
+              data-wheelable="false"
+              data-loops="false">
           </div>
           <div class="pano-frame" id="furich-pano">
             <img src="../img/FGLeft.png"
               class="reel pano"
-              data-frames="620"
-              data-speed="0.1"
-              data-loops="false"
-              data-delay="1"
               id="image2"
               data-image="../img/FGPanorama1.png"
-              data-stitched= "1652"
-              data-orientable="true">
+              data-stitched="1821"
+              data-frames="620"
+              data-frame="23"
+              data-speed="-0.1"
+              data-clickfree="true"
+              data-wheelable="false"
+              data-loops="false">
           </div>
           <div class="pano-frame" id="jasomirgott-pano">
             <img src="../img/FGLeft.png"
@@ -203,6 +207,8 @@
               data-delay="1"
               id="image2"
               data-image="../img/FGPanorama1.png"
+              data-clickfree="true"
+              data-wheelable="false"
               data-stitched= "1652"
               data-orientable="true">
           </div>

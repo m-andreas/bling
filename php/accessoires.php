@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset=utf-8>
-  <meta name=description content="Reparatur von Apple und Smartphones">
-  <meta name=author content="handyrepair.at">
+  <meta name=description content="Informationen über unser Sortiment beinhaltet Carbon Cases, Ladekabel, Selfie Sticks, Iphone Cases, Sim Karten und diverse Luxus Cases.">
+  <meta name=author content="Bling my Phone">
   <meta name=language content="de">
-  <meta name=keywords content="Iphone, Apple, Handy, Reparatur, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon">
+  <meta name=keywords content="Iphone, Apple, Handy, Accessoires, Zubehör, Smartphone, Samsung, LG, HTC, Nokia, Sony, Blackberry, Mobiltelefon, kaufen">
   <meta name=robots content=index,follow>
   <meta name=audience content=alle>
-  <meta name=page-topic content="Handyreparaturservice">
+  <meta name=page-topic content="Bling my Phone - Unser Angbot/Sortiment an Handyzubehör in 1010 Wien.">
   <meta name=revisit-after CONTENT="7 days">
   <link rel="stylesheet" href="../css/foundation.css" />
   <link rel="stylesheet" href="../css/animate.css">
@@ -19,7 +19,7 @@
   <script src="../js/vendor/modernizr.js"></script>
 
 
-  <title>Bling my Phone - Für jeden Geschmack!</title>
+  <title>Bling my Phone - Unser Angbot/Sortiment an Handyzubehör in 1010 Wien.</title>
   <link rel="shortcut icon" type="image/x-icon" href="../css/images/favicon.ico" />
 </head>
 <body onload="show_content()">
