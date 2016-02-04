@@ -164,9 +164,15 @@
         </div>
         <div class="small-12 medium-3 column address" id="jasomirgott">
           <p class="adresse">Impressum<br></p>
-          <p>Bling my Phone GmbH<br>
-          Jasmirgottstrasse 1-3<br>
-          A - 1010 Wien</p>
+          <p>Bling my Phone GmbH
+              Führichgasse 4<br>
+              1010 Wien<br>
+              Tel: +43 1 890 1330<br>
+              E-Mail: office@mybling.at<br><br>
+              UID-Nr: ATU68204604<br>
+              FN: 403124f<br>
+              FB-Gericht: Wien<br>
+              Mitglied der WKÖ, WKW</p>
         </div>
         <div id="map"></div>
         <img id="map-hand" src="../img/hand-map.png">
